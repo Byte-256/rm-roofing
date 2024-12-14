@@ -28,7 +28,7 @@ button:focus {
 }
 
 .sec-3{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/image/roofing-bg.jpg);
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/image/roofing-bg.jpg); */
 	background-size: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
