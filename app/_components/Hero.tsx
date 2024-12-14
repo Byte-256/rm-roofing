@@ -10,7 +10,7 @@ export default function Hero() {
 
 				{/* Hero Content */}
 				<div className="relative z-10 flex flex-col justify-center items-center text-center md:text-left">
-					<h1 className="m-4 font-bold text-3xl md:text-5xl text-shadow-lg text-black">
+					<h1 className="m-4 font-bold text-3xl md:text-5xl text-shadow-lg text-[#006800]">
 						Roofing Excellence, 14 Years Strong.
 					</h1>
 					<p className="m-4 text-lg md:text-xl max-w-5xl text-shadow-md">
