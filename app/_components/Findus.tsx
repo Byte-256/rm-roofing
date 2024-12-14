@@ -48,6 +48,18 @@ export default function FindUs() {
 					/>
 				</a>
 			</div>
+
+		<section className="sec-3">
+        	<div className="flex flex-col mx-36">
+            	<div className="cont-img">
+                	<img src="/image/logo.png" alt="RM Roofing Logo" className="block; ml-auto mr-auto w-1/4" />
+	            </div>
+				<div className="cont-p">
+					<p className="text-center text-xl text-white">Why should you choose R&M Roofers LLC for your roofing needs? Because when you choose us, you're choosing 14 years of unwavering commitment to excellence. Our team is not just experienced; we are passionate about providing roofing solutions that protect your investment. We understand the significance of your roof, and we approach every project with meticulous care and expertise. </p>
+				</div>
+    	    </div>
+    	</section>
+
 		</div>
 	);
 }
