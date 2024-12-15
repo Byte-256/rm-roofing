@@ -10,10 +10,10 @@ export default function Hero() {
 
 				{/* Hero Content */}
 				<div className="relative z-10 flex flex-col justify-center items-center text-center md:text-left">
-					<h1 className="m-4 font-bold text-3xl md:text-5xl text-shadow-lg text-[#006800]">
+					<h1 className="m-4 font-bold text-3xl md:text-5xl text-shadow-lg text-white">
 						Roofing Excellence, 14 Years Strong.
 					</h1>
-					<p className="m-4 text-lg md:text-xl max-w-5xl text-shadow-md">
+					<p className="m-4 text-lg md:text-xl max-w-5xl text-shadow-md text-white font-semibold sm:font-normal">
 						At R&M Roofers LLC, our mission is simple and steadfast: to deliver
 						roofing solutions that protect, enhance, and stand the test of time.
 						With 14 years of roofing expertise, we understand the vital role

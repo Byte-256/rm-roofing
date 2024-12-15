@@ -1,5 +1,7 @@
 "use client";
-import { useState } from "react";
+
+import Script from "next/script";
+
 export default function Experience() {
 	return (
 		<section className="mt-24 px-4 md:px-16">
@@ -10,10 +12,10 @@ export default function Experience() {
 						We have 14 Years of Experience
 					</h2>
 					<p className="text-lg md:text-xl mb-4">
-						Welcome to R&M Roofers LLC, your trusted partner for top-quality
-						roofing solutions in Hempstead, NY, and nearby areas. With 14 years
-						of solid experience in the roofing industry, we've built a
-						reputation for exceptional craftsmanship, reliability, and
+						Welcome to R&M Roofers LLC&lsquo your trusted partner for top-quality
+						roofing solutions in Hempstead&lsquo NY&lsquo and nearby areas. With 14 years
+						of solid experience in the roofing industry&lsquo we&aposve built a
+						reputation for exceptional craftsmanship&lsquo reliability&lsquo and
 						outstanding service.
 					</p>
 					<a
@@ -38,7 +40,7 @@ function ContactForm() {
 				src="https://api.leadconnectorhq.com/widget/form/qdSOxp9NXk8Ozs8j8z9e"
 				className="w-full h-100"
 				id="inline-qdSOxp9NXk8Ozs8j8z9e"
-				data-layout="{'id':'INLINE'}"
+				data-layout="{&aposid&apos:&aposINLINE&apos}"
 				data-trigger-type="alwaysShow"
 				data-trigger-value=""
 				data-activation-type="alwaysActivated"
@@ -51,7 +53,7 @@ function ContactForm() {
 				data-form-id="qdSOxp9NXk8Ozs8j8z9e"
 				title="LP Form"
 			></iframe>
-			<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+			<Script src="https://link.msgsndr.com/js/form_embed.js"></Script>
 		</div>
 	);
 }

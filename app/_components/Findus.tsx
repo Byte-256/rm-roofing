@@ -59,22 +59,23 @@ export default function FindUs() {
 				className="bg-fixed bg-no-repeat bg-cover w-full pb-12 mt-12"
 				style={{ backgroundImage: "url('./image/roofing-bg.jpg" }}
 			>
-				<div className="flex flex-col mx-36">
+				<div className="flex flex-col font-semibold md:font-normal mx-auto md:mx-36">
+
 					<div className="">
 						<img
 							src="/image/logo.png"
 							alt="RM Roofing Logo"
-							className="block; ml-auto mr-auto w-1/4"
+							className="block; ml-auto mr-auto max-w-96"
 						/>
 					</div>
-					<div className="cont-p">
-						<p className="text-center text-xl text-white">
+					<div className="cont-p mx-8">
+						<p className="text-center text-xl text-white text-pretty">
 							Why should you choose R&M Roofers LLC for your roofing needs?
-							Because when you choose us, you're choosing 14 years of unwavering
+							Because when you choose us, you{"'"}re choosing 14 years of unwavering
 							commitment to excellence. Our team is not just experienced; we are
 							passionate about providing roofing solutions that protect your
 							investment. We understand the significance of your roof, and we
-							approach every project with meticulous care and expertise.{" "}
+							approach every project with meticulous care and expertise.
 						</p>
 					</div>
 				</div>

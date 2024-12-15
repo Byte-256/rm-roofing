@@ -9,7 +9,6 @@ import {
     faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
@@ -84,9 +83,9 @@ export default function Nav() {
             </div>
 
             {/* Header */}
-            <div className="flex justify-between items-center px-4 py-2 bg-white">
+            <div className="flex justify-between items-center px-4 bg-white">
                 {/* Logo */}
-                <Image src="/image/logo.png" alt="Logo" width={100} height={100} />
+                <img src="./image/logo.png" alt="Logo" className="w-40"/>
 
                 {/* Hamburger Menu Button (Visible on Mobile) */}
                 <button
