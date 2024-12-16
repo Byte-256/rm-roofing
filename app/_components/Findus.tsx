@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function FindUs() {
 	return (
 		<div className="mt-8">
@@ -11,7 +13,9 @@ export default function FindUs() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<img
+					<Image
+					width={100}
+					height={100}
 						src="./image/houzz.png"
 						alt="Houzz"
 						className=" w-36 sm:w-40 md:w-48 lg:w-64 p-4"
@@ -23,7 +27,9 @@ export default function FindUs() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<img
+					<Image
+					width={100}
+					height={100}
 						src="./image/bbb.png"
 						alt="BBB"
 						className=" w-36 sm:w-40 md:w-48 lg:w-64 p-4"
@@ -35,7 +41,9 @@ export default function FindUs() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<img
+					<Image
+					width={100}
+					height={100}
 						src="./image/showMeLocal.png"
 						alt="ShowMeLocal"
 						className=" w-36 sm:w-40 md:w-48 lg:w-64 p-4"
@@ -47,7 +55,9 @@ export default function FindUs() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<img
+					<Image
+					width={100}
+					height={100}
 						src="./image/mapquest.png"
 						alt="MapQuest"
 						className=" w-36 sm:w-40 md:w-48 lg:w-64 p-4"
@@ -62,9 +72,11 @@ export default function FindUs() {
 				<div className="flex flex-col font-semibold md:font-normal mx-auto md:mx-36">
 
 					<div className="">
-						<img
+						<Image
 							src="./image/logo.png"
 							alt="RM Roofing Logo"
+							width={100}
+							height={100}
 							className="block; ml-auto mr-auto max-w-96"
 						/>
 					</div>

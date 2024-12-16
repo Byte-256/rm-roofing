@@ -1,4 +1,5 @@
 import Nav from "../_components/Nav";
+import Image from "next/image";
 
 export default function Gallery() {
 	return (
@@ -8,58 +9,268 @@ export default function Gallery() {
 				<h1 className="font-semibold text-3xl">GALLERY</h1>
 			</section>
 			<section className="gal-img">
-				<img src="./gallery/gal(1).jpg" alt="" />
-				<img src="./gallery/gal(2).jpg" alt="" />
-				<img src="./gallery/gal(3).jpg" alt="" />
-				<img src="./gallery/gal(4).jpg" alt="" />
-				<img src="./gallery/gal(5).jpg" alt="" />
-				<img src="./gallery/gal(6).jpg" alt="" />
-				<img src="./gallery/gal(7).jpg" alt="" />
-				<img src="./gallery/gal(8).jpg" alt="" />
-				<img src="./gallery/gal(9).jpg" alt="" />
-				<img src="./gallery/gal(10).jpg" alt="" />
-				<img src="./gallery/gal(11).jpg" alt="" />
-				<img src="./gallery/gal(12).jpg" alt="" />
-				<img src="./gallery/gal(13).jpg" alt="" />
-				<img src="./gallery/gal(14).jpg" alt="" />
-				<img src="./gallery/gal(15).jpg" alt="" />
-				<img src="./gallery/gal(16).jpg" alt="" />
-				<img src="./gallery/gal(17).jpg" alt="" />
-				<img src="./gallery/gal(18).jpg" alt="" />
-				<img src="./gallery/gal(19).jpg" alt="" />
-				<img src="./gallery/gal(20).jpg" alt="" />
-				<img src="./gallery/gal(21).jpg" alt="" />
-				<img src="./gallery/gal(22).jpg" alt="" />
-				<img src="./gallery/gal(23).jpg" alt="" />
-				<img src="./gallery/gal(24).jpg" alt="" />
-				<img src="./gallery/gal(25).jpg" alt="" />
-				<img src="./gallery/gal(26).jpg" alt="" />
-				<img src="./gallery/gal(27).jpg" alt="" />
-				<img src="./gallery/gal(28).jpg" alt="" />
-				<img src="./gallery/gal(29).jpg" alt="" />
-				<img src="./gallery/gal(30).jpg" alt="" />
-				<img src="./gallery/gal(31).jpg" alt="" />
-				<img src="./gallery/gal(32).jpg" alt="" />
-				<img src="./gallery/gal(33).jpg" alt="" />
-				<img src="./gallery/gal(34).jpg" alt="" />
-				<img src="./gallery/gal(35).jpg" alt="" />
-				<img src="./gallery/gal(36).jpg" alt="" />
-				<img src="./gallery/gal(37).jpg" alt="" />
-				<img src="./gallery/gal(38).jpg" alt="" />
-				<img src="./gallery/gal(39).jpg" alt="" />
-				<img src="./gallery/gal(40).jpg" alt="" />
-				<img src="./gallery/gal(41).jpg" alt="" />
-				<img src="./gallery/gal(42).jpg" alt="" />
-				<img src="./gallery/gal(43).jpg" alt="" />
-				<img src="./gallery/gal(44).jpg" alt="" />
-				<img src="./gallery/gal(45).jpg" alt="" />
-				<img src="./gallery/gal(46).jpg" alt="" />
-				<img src="./gallery/gal(47).jpg" alt="" />
-				<img src="./gallery/gal(48).jpg" alt="" />
-				<img src="./gallery/gal(49).jpg" alt="" />
-				<img src="./gallery/gal(50).jpg" alt="" />
-				<img src="./gallery/gal(51).jpg" alt="" />
-				<img src="./gallery/gal(8).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(1).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(2).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(3).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(4).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(5).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(6).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(7).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(8).jpg" alt="" />
+				<Image width={100} height={100} src="./gallery-img/gal(9).jpg" alt="" />
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(10).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(11).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(12).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(13).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(14).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(15).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(16).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(17).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(18).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(19).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(20).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(21).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(22).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(23).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(24).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(25).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(26).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(27).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(28).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(29).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(30).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(31).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(32).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(33).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(34).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(35).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(36).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(37).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(38).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(39).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(40).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(41).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(42).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(43).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(44).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(45).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(46).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(47).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(48).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(49).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(50).jpg"
+					alt=""
+				/>
+				<Image
+					width={100}
+					height={100}
+					src="./gallery-img/gal(51).jpg"
+					alt=""
+				/>
+				<Image width={100} height={100} src="./gallery-img/gal(8).jpg" alt="" />
 			</section>
 		</>
 	);

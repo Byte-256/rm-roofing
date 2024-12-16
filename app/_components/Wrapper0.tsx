@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Wrapper0() {
 	return (
@@ -16,7 +17,7 @@ export default function Wrapper0() {
 			
 			<div className="flex flex-col justify-center items-center pb-16">
 				<h1 className="text-4xl font-bold pt-8 pb-4 col-span-4">Want more ?</h1>
-				<a href="/gallery" className="bg-[#006800] text-white font-semibold text-xl p-2 rounded-md"> Click here </a>
+				<Link href="/gallery" className="bg-[#006800] text-white font-semibold text-xl p-2 rounded-md"> Click here </Link>
 			</div>
 		</div>
 	);
