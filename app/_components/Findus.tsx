@@ -63,7 +63,7 @@ export default function FindUs() {
 
 					<div className="">
 						<img
-							src="/image/logo.png"
+							src="./image/logo.png"
 							alt="RM Roofing Logo"
 							className="block; ml-auto mr-auto max-w-96"
 						/>

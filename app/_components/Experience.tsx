@@ -7,16 +7,16 @@ export default function Experience() {
 		<section className="mt-24 px-4 md:px-16">
 			<div className="flex flex-col md:flex-row justify-center gap-14">
 				{/* Left Column */}
-				<div className="main-menu-text flex flex-col max-w-full md:max-w-[40%] mt-36">
+				<div className="main-menu-text flex flex-col max-w-full md:max-w-[40%] mt-10 md:mt-36">
 					<h2 className="text-3xl md:text-5xl font-bold text-[#006800] mb-4">
 						We have 14 Years of Experience
 					</h2>
-					<p className="text-lg md:text-xl mb-4">
-						Welcome to R&M Roofers LLC&lsquo your trusted partner for top-quality
-						roofing solutions in Hempstead&lsquo NY&lsquo and nearby areas. With 14 years
-						of solid experience in the roofing industry&lsquo we&aposve built a
-						reputation for exceptional craftsmanship&lsquo reliability&lsquo and
-						outstanding service.
+					<p className="text-lg md:text-xl mb-4">{`
+						Welcome to R&M Roofers LLC, your trusted partner for top-quality
+						roofing solutions in Hempstead, NY, and nearby areas. With 14 years
+						of solid experience in the roofing industry, we’ve built a
+						reputation for exceptional craftsmanship, reliability, and
+						outstanding service.`}
 					</p>
 					<a
 						href="#"

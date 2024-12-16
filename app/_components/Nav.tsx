@@ -20,13 +20,13 @@ export default function Nav() {
     return (
         <nav className="w-full">
             {/* Top Bar */}
-            <div className="bg-[#006800] flex justify-between items-center w-full h-14 px-4">
+            <div className="bg-[#006800] flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full h-20 px-4">
                 {/* Left Side */}
                 <div className="flex items-center">
                     <Link
                         href="tel:+1516-233-9506"
                         target="_blank"
-                        className="mx-2 border-r-2 pr-4 text-white"
+                        className="mx-2 border-x-2 px-4 text-white"
                     >
                         Mon-Fri 09:00-17:00
                     </Link>
@@ -41,40 +41,40 @@ export default function Nav() {
                 </div>
 
                 {/* Right Side */}
-                <div className="flex items-center">
-                    <div className="mx-4">
+                <div className="flex flex-wrap lg:gap-4 gap-6">
+                    <div className="md:px-4 px-6 border-white border-x-2">
                         <Link
                             rel="nofollow"
                             href="https://www.facebook.com/profile.php?id=61561068159882"
                             target="_blank"
-                            className="text-white"
+                            className="text-white text-lg md:text-2xl"
                         >
                             <FontAwesomeIcon icon={faFacebook} />
                         </Link>
                     </div>
-                    <div className="mx-4">
+                    <div className="md:pr-4 pr-6 border-white border-e-2">
                         <Link
                             href="https://www.linkedin.com/in/ss-india-roofing-b10647317/"
                             target="_blank"
-                            className="text-white"
+                            className="text-white text-lg md:text-2xl"
                         >
                             <FontAwesomeIcon icon={faLinkedin} />
                         </Link>
                     </div>
-                    <div className="mx-4">
+                    <div className="md:pr-4 pr-6 border-white border-e-2">
                         <Link
                             href="https://wa.me/+918610486372"
                             target="_blank"
-                            className="text-white"
+                            className="text-white text-lg md:text-2xl"
                         >
                             <FontAwesomeIcon icon={faWhatsapp} />
                         </Link>
                     </div>
-                    <div className="mx-4">
+                    <div className="md:pr-4 pr-6 border-white border-e-2">
                         <Link
                             href="https://www.instagram.com/ssinidaroofing/"
                             target="_blank"
-                            className="text-white"
+                            className="text-white text-lg md:text-2xl"
                         >
                             <FontAwesomeIcon icon={faInstagram} />
                         </Link>

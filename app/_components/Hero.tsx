@@ -3,7 +3,7 @@ export default function Hero() {
 		<>
 			<section
 				className="sec-1 relative bg-cover py-20 px-6 md:px-20"
-				style={{ backgroundImage: "url(/image/homemainbg.jpg)" }}
+				style={{ backgroundImage: "url(./image/homemainbg.jpg)" }}
 			>
 				{/* Overlay to darken the image */}
 				<div className="absolute inset-0 bg-black opacity-10"></div>
