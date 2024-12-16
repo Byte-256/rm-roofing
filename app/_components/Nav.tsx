@@ -83,7 +83,7 @@ export default function Nav() {
             </div>
 
             {/* Header */}
-            <div className="flex justify-between items-center px-4 bg-white">
+            <div className="flex justify-between items-center px-4 bg-white lg:justify-evenly">
                 {/* Logo */}
                 <img src="./image/logo.png" alt="Logo" className="w-40"/>
 
@@ -117,7 +117,7 @@ export default function Nav() {
 
 function Links() {
     return (
-        <div className="flex flex-col md:flex-row md:space-x-6">
+        <div className="flex flex-col md:flex-row md:space-x-6 text-lg">
             <Link href="/" className="py-2 hover:text-red-300">
                 HOME
             </Link>
