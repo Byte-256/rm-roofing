@@ -66,18 +66,18 @@ export default function FindUs() {
 			</div>
 
 			<section
-				className="bg-fixed bg-no-repeat bg-cover w-full pb-12 mt-12"
+				className="bg-fixed bg-no-repeat bg-cover w-full pb-32 mt-12"
 				style={{ backgroundImage: "url('./image/roofing-bg.jpg" }}
 			>
 				<div className="flex flex-col font-semibold md:font-normal mx-auto md:mx-36">
 
-					<div className="">
+					<div className="w-full">
 						<Image
 							src="./image/logo.png"
 							alt="RM Roofing Logo"
-							width={100}
+							width={300}
 							height={100}
-							className="block; ml-auto mr-auto max-w-96"
+							className="block mx-auto max-w-96"
 						/>
 					</div>
 					<div className="cont-p mx-8">

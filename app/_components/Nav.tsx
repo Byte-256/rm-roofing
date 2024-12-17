@@ -1,138 +1,151 @@
 "use client";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import {
-    faFacebook,
-    faInstagram,
-    faLinkedin,
-    faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import Image from "next/image";
+import {
+	FaClock,
+	FaFacebook,
+	FaInstagram,
+	FaLinkedin,
+	FaPhoneAlt,
+	FaWhatsapp,
+} from "react-icons/fa";
 
 export default function Nav() {
-    const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+	const toggleMenu = () => {
+		setIsOpen(!isOpen);
+	};
+	const closeMenu = () => {
+		setIsOpen(!isOpen);
+	};
 
-    return (
-        <nav className="w-full">
-            {/* Top Bar */}
-            <div className="bg-[#006800] flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full h-20 px-4">
-                {/* Left Side */}
-                <div className="flex items-center">
-                    <Link
-                        href="tel:+1516-233-9506"
-                        target="_blank"
-                        className="mx-2 border-x-2 px-4 text-white"
-                    >
-                        Mon-Fri 09:00-17:00
-                    </Link>
-                    <Link
-                        href="tel:+1516-233-9506"
-                        target="_blank"
-                        className="mx-2 border-r-2 pr-4 text-white"
-                    >
-                        <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                        516-233-9506
-                    </Link>
-                </div>
+	return (
+		<nav className="w-full">
+			{/* Top Bar */}
+			<div className="bg-[#006800] flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full h-24 md:h-20 px-4">
+				{/* md:Left Side  sm:Above */}
+				<div className="flex items-center">
+					<Link
+						href="tel:+1516-233-9506"
+						target="_blank"
+						className="mx-2 px-6 border-white border-x-2 text-white flex flex-row gap-2"
+					>
+						<FaClock className="mt-1" />
+						Mon-Fri 09:00-17:00
+					</Link>
+					<Link
+						href="tel:+1516-233-9506"
+						target="_blank"
+						className="mx-2 border-r-2 px-4 text-white flex flex-row gap-2"
+					>
+						<FaPhoneAlt className="mt-1" />
+						516-233-9506
+					</Link>
+				</div>
 
-                {/* Right Side */}
-                <div className="flex flex-wrap lg:gap-4 gap-6">
-                    <div className="md:px-4 px-6 border-white border-x-2">
-                        <Link
-                            rel="nofollow"
-                            href="https://www.facebook.com/profile.php?id=61561068159882"
-                            target="_blank"
-                            className="text-white text-lg md:text-2xl"
-                        >
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </Link>
-                    </div>
-                    <div className="md:pr-4 pr-6 border-white border-e-2">
-                        <Link
-                            href="https://www.linkedin.com/in/ss-india-roofing-b10647317/"
-                            target="_blank"
-                            className="text-white text-lg md:text-2xl"
-                        >
-                            <FontAwesomeIcon icon={faLinkedin} />
-                        </Link>
-                    </div>
-                    <div className="md:pr-4 pr-6 border-white border-e-2">
-                        <Link
-                            href="https://wa.me/+918610486372"
-                            target="_blank"
-                            className="text-white text-lg md:text-2xl"
-                        >
-                            <FontAwesomeIcon icon={faWhatsapp} />
-                        </Link>
-                    </div>
-                    <div className="md:pr-4 pr-6 border-white border-e-2">
-                        <Link
-                            href="https://www.instagram.com/ssinidaroofing/"
-                            target="_blank"
-                            className="text-white text-lg md:text-2xl"
-                        >
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </Link>
-                    </div>
-                </div>
-            </div>
+				{/* md:Right Side sm:Below */}
+				<div className="flex flex-wrap lg:gap-4 gap-6 pt-4 md:pt-0">
+					<div className="md:px-4 px-6 border-white border-x-2">
+						<Link
+							rel="nofollow"
+							href="https://www.facebook.com/profile.php?id=61561068159882"
+							target="_blank"
+							className="text-white text-lg md:text-2xl"
+						>
+							<FaFacebook />
+						</Link>
+					</div>
+					<div className="md:pr-4 pr-6 border-white border-e-2">
+						<Link
+							href="https://www.linkedin.com/in/ss-india-roofing-b10647317/"
+							target="_blank"
+							className="text-white text-lg md:text-2xl"
+						>
+							<FaLinkedin />
+						</Link>
+					</div>
+					<div className="md:pr-4 pr-6 border-white border-e-2">
+						<Link
+							href="https://wa.me/+918610486372"
+							target="_blank"
+							className="text-white text-lg md:text-2xl"
+						>
+							<FaWhatsapp />
+						</Link>
+					</div>
+					<div className="md:pr-4 pr-6 border-white border-e-2">
+						<Link
+							href="https://www.instagram.com/ssinidaroofing/"
+							target="_blank"
+							className="text-white text-lg md:text-2xl"
+						>
+							<FaInstagram />
+						</Link>
+					</div>
+				</div>
+			</div>
 
-            {/* Header */}
-            <div className="flex justify-between items-center px-4 bg-white lg:justify-evenly">
-                {/* Logo */}
-                <img src="./image/logo.png" alt="Logo" className="w-40"/>
+			{/* Header */}
+			<div className="flex justify-between items-center px-4 bg-white lg:justify-evenly">
+				{/* Logo */}
+				<Link href={"/"}>
+					<Image
+						src="./image/logo.png"
+						alt="Logo"
+						className="w-40"
+						width={100}
+						height={100}
+					/>
+				</Link>
 
-                {/* Hamburger Menu Button (Visible on Mobile) */}
-                <button
-                    onClick={toggleMenu}
-                    className="block md:hidden focus:outline-none"
-                >
-                    <div className="w-6 h-1 bg-red-400 mb-1"></div>
-                    <div className="w-6 h-1 bg-red-400 mb-1"></div>
-                    <div className="w-6 h-1 bg-red-400"></div>
-                </button>
+				{/* Hamburger Menu Button (Visible on Mobile) */}
+				<button
+					onClick={toggleMenu}
+					className="block md:hidden focus:outline-none"
+				>
+					<div className="w-6 h-1 bg-red-400 mb-1"></div>
+					<div className="w-6 h-1 bg-red-400 mb-1"></div>
+					<div className="w-6 h-1 bg-red-400"></div>
+				</button>
 
-                {/* Links (Always Visible on Desktop) */}
-                <div className="hidden md:flex space-x-6">
-                    <Links />
-                </div>
-            </div>
+				{/* Links (Always Visible on Desktop) */}
+				<div className="hidden md:flex space-x-6">
+					<Links closeMenu={closeMenu}/>
+				</div>
+			</div>
 
-            {/* Mobile Menu (Visible when toggled) */}
-            <div
-                className={`${
-                    isOpen ? "block" : "hidden"
-                } md:hidden bg-white shadow-md mt-2 p-4`}
-            >
-                <Links />
-            </div>
-        </nav>
-    );
+			{/* Mobile Menu (Visible when toggled) */}
+			<div
+				className={`${
+					isOpen ? "block translate-y-0 opacity-100" : "hidden opacity-0 translate-y-4"
+				} md:hidden bg-white shadow-md mt-2 p-4 transition-all duration-500 ease-in-out`}
+			>
+				<Links closeMenu={closeMenu}/>
+			</div>
+		</nav>
+	);
 }
 
-function Links() {
-    return (
-        <div className="flex flex-col md:flex-row md:space-x-6 text-lg">
-            <Link href="/" className="py-2 hover:text-red-300">
-                HOME
-            </Link>
-            <Link href="/about" className="py-2 hover:text-gray-300">
-                ABOUT
-            </Link>
-            <Link href="/services" className="py-2 hover:text-gray-300">
-                SERVICES
-            </Link>
-            <Link href="/gallery" className="py-2 hover:text-gray-300">
-                GALLERY
-            </Link>
-            <Link href="/contact" className="py-2 hover:text-gray-300">
-                CONTACT
-            </Link>
-        </div>
-    );
+function Links({closeMenu}: {closeMenu: ()=>void}) {
+	return (
+		<div className="flex flex-col md:flex-row md:space-x-6 text-lg">
+			<Link href="/" className="py-2 hover:text-red-400" onClick={closeMenu}>
+				HOME
+			</Link>
+			<Link href="/about" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+				ABOUT
+			</Link>
+			<Link href="/services" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+				SERVICES
+			</Link>
+			<Link href="/gallery" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+				GALLERY
+			</Link>
+			<Link href="/contact" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+				CONTACT
+			</Link>
+		</div>
+	);
 }
