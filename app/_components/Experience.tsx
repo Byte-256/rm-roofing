@@ -5,13 +5,14 @@ import Script from "next/script";
 export default function Experience() {
 	return (
 		<section className="mt-24 px-4 md:px-16">
-			<div className="flex flex-col md:flex-row justify-center gap-14">
+			<div className="flex flex-col md:flex-row justify-center sm:gap-14">
 				{/* Left Column */}
 				<div className="main-menu-text flex flex-col max-w-full md:max-w-[40%] mt-10 md:mt-36">
 					<h2 className="text-3xl md:text-5xl font-bold text-[#006800] mb-4">
 						We have 14 Years of Experience
 					</h2>
-					<p className="text-lg md:text-xl mb-4">{`
+					<p className="text-lg md:text-xl mb-4">
+						{`
 						Welcome to R&M Roofers LLC, your trusted partner for top-quality
 						roofing solutions in Hempstead, NY, and nearby areas. With 14 years
 						of solid experience in the roofing industry, we’ve built a
@@ -35,10 +36,10 @@ export default function Experience() {
 
 function ContactForm() {
 	return (
-		<div className="sm:w-1/2">
+		<>
 			<iframe
 				src="https://api.leadconnectorhq.com/widget/form/qdSOxp9NXk8Ozs8j8z9e"
-				className="w-full h-100"
+				className="w-full h-100 mx-0"
 				id="inline-qdSOxp9NXk8Ozs8j8z9e"
 				data-layout="{&aposid&apos:&aposINLINE&apos}"
 				data-trigger-type="alwaysShow"
@@ -54,6 +55,6 @@ function ContactForm() {
 				title="LP Form"
 			></iframe>
 			<Script src="https://link.msgsndr.com/js/form_embed.js"></Script>
-		</div>
+		</>
 	);
 }

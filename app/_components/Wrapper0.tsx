@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Wrapper0() {
 	return (
-		<div className="wraper-0 bg-gradient-to-b from-[#242424] to-[#efefef] flex flex-col relative overflow-hidden">
+		<div style={{backgroundImage: 'url(./graphics2.jpg)'}} className="wraper-0 bg-gradient-to-b from-[#242424] to-[#efefef] flex flex-col relative overflow-hidden">
 			{/* Decorative Background Elements */}
 			<div className="absolute inset-0 bg-black opacity-10 pointer-events-none"></div>
 
@@ -13,7 +13,7 @@ export default function Wrapper0() {
 					<p className="bg-amber-300 h-1 w-6 mt-2"></p>
 					<span className="uppercase tracking-wide">LATEST PROJECTS</span>
 				</span>
-				<h2 className="text-3xl md:text-5xl text-amber-300 font-bold pt-3 leading-tight">
+				<h2 className="text-3xl md:text-5xl text-yellow-400 font-bold pt-3 leading-tight">
 					{`Let's Explore Our`} <br /> Recent Works
 				</h2>
 			</div>
@@ -26,18 +26,18 @@ export default function Wrapper0() {
 			{/* Footer with Call-to-Action */}
 			<div className="flex flex-col justify-center items-center pb-16">
 				<h1 className="text-4xl font-bold pt-8 pb-4 col-span-4">
-					Explore Our Full Gallery
+					Explore
 				</h1>
 				<Link
 					href="/gallery"
-					className="bg-[#006800] text-white font-semibold text-xl p-2 rounded-md"
+					className="bg-[#006800] text-white px-4 py-2 rounded-md underline hover:bg-amber-300 hover:text-black"
 				>
-					Click Here
+					More
 				</Link>
 			</div>
 
 			{/* Decorative Bottom Element */}
-			<div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#242424] to-transparent"></div>
+			{/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#242424] to-transparent"></div> */}
 		</div>
 	);
 }

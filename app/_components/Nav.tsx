@@ -10,6 +10,7 @@ import {
 	FaPhoneAlt,
 	FaWhatsapp,
 } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -129,21 +130,23 @@ export default function Nav() {
 }
 
 function Links({closeMenu}: {closeMenu: ()=>void}) {
+	const path = usePathname()
 	return (
+		
 		<div className="flex flex-col md:flex-row md:space-x-6 text-lg">
-			<Link href="/" className="py-2 hover:text-red-400" onClick={closeMenu}>
+			<Link href="/" className={`py-2 hover:text-red-400 ${path === "/" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
 				HOME
 			</Link>
-			<Link href="/about" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+			<Link href="/about" className={`py-2 hover:text-red-400 ${path === "/about" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
 				ABOUT
 			</Link>
-			<Link href="/services" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+			<Link href="/services" className={`py-2 hover:text-red-400 ${path === "/services" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
 				SERVICES
 			</Link>
-			<Link href="/gallery" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+			<Link href="/gallery" className={`py-2 hover:text-red-400 ${path === "/gallery" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
 				GALLERY
 			</Link>
-			<Link href="/contact" className="py-2 hover:text-gray-400" onClick={closeMenu}>
+			<Link href="/contact" className={`py-2 hover:text-red-400 ${path === "/contact" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
 				CONTACT
 			</Link>
 		</div>
