@@ -1,9 +1,10 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-    FaAngleRight,
-    FaBuilding,
+	FaAngleRight,
+	FaBuilding,
 	FaClock,
 	FaEnvelope,
 	FaFacebook,
@@ -12,7 +13,7 @@ import {
 	FaMapMarked,
 	FaPhoneAlt,
 	FaWhatsapp,
-    FaWindowClose,
+	FaWindowClose,
 } from "react-icons/fa";
 
 export function Footer() {
@@ -23,7 +24,13 @@ export function Footer() {
 			{/* Contact */}
 			<div className="foot-1 flex justify-evenly flex-wrap items-center p-3 text-white">
 				<div className="foot-logo">
-					<img src="./image/logo.png" alt="RM Logo" className="w-32 md:w-56" />
+					<Image
+						width={100}
+						height={100}
+						src="./image/logo.png"
+						alt="RM Logo"
+						className="w-32 md:w-56"
+					/>
 				</div>
 				<Link
 					href={"tel:+8469025092"}
@@ -73,25 +80,34 @@ export function Footer() {
 			<hr className="mx-6 md:mx-20" />
 
 			{/* Foot-2 */}
-			<div className="foot-2 flex flex-wrap text-[#A5A5A5] px-10 items-center md:justify-evenly mt-10 gap-y-4">
+			<div className="foot-2 flex flex-wrap md:flex-nowrap md:gap-5 text-[#A5A5A5] px-10  md:justify-evenly mt-10 gap-y-4">
 				<div className="foot-info">
 					{" "}
 					<h1 className="relative text-2xl font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-[#ffc000] after:mt-4 after:left-0 text-white  mb-3">
 						Information
 					</h1>
-					<Link href={"https://maps.app.goo.gl/93DV8RhV3kpbk7wR8"} target="_blank">
-						<p className=" flex gap-3 items-center hover:text-[#e7e4e4]" >
+					<Link
+						href={"https://maps.app.goo.gl/93DV8RhV3kpbk7wR8"}
+						target="_blank"
+					>
+						<p className=" flex gap-3 items-center hover:text-[#e7e4e4]">
 							<FaMapMarked /> 90 Grove St 9 Hempstead NY, 11550
 						</p>
 					</Link>
-					<p className=" flex gap-3 items-center">
+					<Link
+						href={"tel:+1516-233-9506"}
+						className="flex gap-3 items-center hover:text-[#e7e4e4]"
+					>
 						<FaPhoneAlt aria-hidden="true" />
 						516-233-9506
-					</p>
-					<p className=" flex gap-3 items-center">
+					</Link>
+					<Link
+						href={"mailto:rocael155@gmail.com"}
+						className=" flex gap-3 items-center hover:text-[#e7e4e4]"
+					>
 						<FaEnvelope aria-hidden="true" />
 						rocael155@gmail.com
-					</p>
+					</Link>
 				</div>
 				<div className="foot-link">
 					<h1 className="relative text-2xl font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-[#ffc000] after:mt-4 after:left-0 text-white  mb-3">
@@ -102,7 +118,9 @@ export function Footer() {
 							<p>
 								<Link
 									href="/"
-									className={`flex items-center ${path === "/" ? "text-yellow-300" : ""}`}
+									className={`flex items-center ${
+										path === "/" ? "text-yellow-300" : ""
+									}`}
 								>
 									<FaAngleRight /> Home
 								</Link>
@@ -110,7 +128,9 @@ export function Footer() {
 							<p>
 								<Link
 									href="/about"
-									className={`flex items-center ${path === "/about" ? "text-yellow-300" : ""}`}
+									className={`flex items-center ${
+										path === "/about" ? "text-yellow-300" : ""
+									}`}
 								>
 									<FaAngleRight /> About
 								</Link>
@@ -118,7 +138,9 @@ export function Footer() {
 							<p>
 								<Link
 									href="/services"
-									className={`flex items-center ${path === "/services" ? "text-yellow-300" : ""}`}
+									className={`flex items-center ${
+										path === "/services" ? "text-yellow-300" : ""
+									}`}
 								>
 									<FaAngleRight /> Services
 								</Link>
@@ -128,7 +150,9 @@ export function Footer() {
 							<p>
 								<Link
 									href="/gallery"
-									className={`flex items-center ${path === "/gallery" ? "text-yellow-300" : ""}`}
+									className={`flex items-center ${
+										path === "/gallery" ? "text-yellow-300" : ""
+									}`}
 								>
 									<FaAngleRight /> Gallery
 								</Link>
@@ -136,7 +160,9 @@ export function Footer() {
 							<p>
 								<Link
 									href="/contact"
-									className={`flex items-center ${path === "/contact" ? "text-yellow-300" : ""}`}
+									className={`flex items-center ${
+										path === "/contact" ? "text-yellow-300" : ""
+									}`}
 								>
 									<FaAngleRight /> Contact
 								</Link>
@@ -148,20 +174,18 @@ export function Footer() {
 					<h1 className="relative text-2xl font-bold after:content-[''] after:block after:w-16 after:h-1 after:bg-[#ffc000] after:mt-4 after:left-0 text-white mb-3">
 						Working Hours
 					</h1>
-					<p className="flex gap-3 items-center">
-						<FaBuilding aria-hidden="true" /> Working:
-						Monday - Friday
+					<p className="flex gap-3 items-center md:text-nowrap">
+						<FaBuilding aria-hidden="true" /> Working: Monday - Friday
 					</p>
-					<p className="flex gap-3 items-center">
-						<FaWindowClose aria-hidden="true"/> Closed:
-						Saturday - Sunday
+					<p className="flex gap-3 items-center md:text-nowrap">
+						<FaWindowClose aria-hidden="true" /> Closed: Saturday - Sunday
 					</p>
-					<p className="flex gap-3 items-center">
+					<p className="flex gap-3 items-center md:text-nowrap">
 						<FaClock /> Time: 09:00 - 17:00
 					</p>
 				</div>
 			</div>
-			<div className="sub-footer">
+			<div className="sub-footer text-center text-white mt-12">
 				<p>
 					&copy; Copyright R&M ROOFING 2024. All Rights Reserved. Designed and
 					By AxwinX & Byte-256

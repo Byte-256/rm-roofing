@@ -47,7 +47,7 @@ export default function Nav() {
 				</div>
 
 				{/* md:Right Side sm:Below */}
-				<div className="flex flex-wrap lg:gap-4 gap-6 pt-4 md:pt-0">
+				<div className="flex flex-wrap lg:gap-4 gap-6 pt-4 md:pt-0 pb-4 md:pb-0">
 					<div className="md:px-4 px-6 border-white border-x-2">
 						<Link
 							rel="nofollow"
