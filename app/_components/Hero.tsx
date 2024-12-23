@@ -6,13 +6,14 @@ export default function Hero() {
 				style={{ backgroundImage: "url(./image/homemainbg.jpg)" }}
 			>
 				{/* Overlay to darken the image */}
-				<div className="absolute inset-0 bg-black opacity-10"></div>
+				<div className="absolute inset-0 bg-black/45"></div>
 
 				{/* Hero Content */}
 				<div className="relative z-10 flex flex-col justify-center items-center text-center md:text-left">
 					<h1 className="m-4 font-bold text-3xl md:text-5xl text-shadow-lg text-white">
 						Roofing Excellence, 14 Years Strong.
 					</h1>
+					
 					<p className="m-4 text-lg md:text-xl max-w-5xl text-shadow-md text-white font-semibold sm:font-normal">
 						At R&M Roofers LLC, our mission is simple and steadfast: to deliver
 						roofing solutions that protect, enhance, and stand the test of time.

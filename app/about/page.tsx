@@ -11,19 +11,26 @@ export default function about() {
 		<>
 			<section className="title-banner flex justify-center items-center">
 				<div className="title">
-					<h1 className="text-center underline">About Us</h1>
+					<h1 className="text-center underline font-bold text-4xl">About Us</h1>
 				</div>
 			</section>
 
 			{/* About 1 */}
 			<section
-				className="about1 p-10 md:p-40 bg-cover align-middle"
+				className="about1 p-10 lg:p-40 bg-cover align-middle"
 				style={{ backgroundImage: "url(./about-img/services1.png)" }}
 			>
-				<div className="container flex flex-wrap md:flex-nowrap">
-					<div className="box border-8 border-yellow-400 m-4 w-full md:w-0 "></div>
+				<div className="container flex flex-wrap md:justify-end lg:flex-nowrap">
+					<div className="box border-b-8 border-yellow-400 m-4 w-full lg:hidden"></div>
+					<div className="box border-r-8 border-yellow-400 m-4 w-full md:w-0 "></div>
 					<div className="cont p-5 flex flex-col justify-center">
-						<p className=" relative px-6 after:bottom-[47%] after:bg-[#006800] after:content-[''] after:absolute after:w-4 after:h-1 after:left-0 inter">
+						<p
+							style={{
+								fontFamily:
+									"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+							}}
+							className=" relative px-6 after:bottom-[47%] after:bg-[#006800] after:content-[''] after:absolute after:w-4 after:h-1 after:left-0 inter"
+						>
 							WHAT ARE WE
 						</p>
 						<h2 className="inter text-4xl font-bold my-4">A Little About Us</h2>
@@ -43,20 +50,21 @@ export default function about() {
 					/>
 				</div>
 			</section>
+
 			{/* About 2 */}
 			<section
-				className="about2 py-10 lg:flex lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
+				className="about2 py-10 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
 				style={{ backgroundImage: "url(./about-img/about-shap-1.png)" }}
 			>
-				<div className="flex gap-4 row flex-wrap lg:flex-nowrap px-3">
-					<div className="container1">
+				<div className="flex flex-col lg:flex-row gap-4 px-3 w-full lg:w-auto">
+					<div className="container1 flex flex-col items-center">
 						<div className="mission mb-4">
 							<h2 className="text-center text-4xl">
 								Our <span className="text-[#006800] font-bold">Mission</span>
 							</h2>
 						</div>
-						<div className="mission-content bout-box">
-							<p className=" text-white">
+						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
+							<p className="text-white text-center">
 								At R&M Roofers LLC, our mission is clear and resolute: to
 								provide roofing solutions that protect, enhance, and endure.
 								With 14 years of roofing expertise, we understand the critical
@@ -67,14 +75,14 @@ export default function about() {
 							</p>
 						</div>
 					</div>
-					<div className="container2 md:p-10">
-						<div className="vision  mb-4">
+					<div className="container2 flex flex-col items-center md:p-10">
+						<div className="vision mb-4">
 							<h2 className="text-center text-4xl">
 								Our <span className="text-[#006800] font-bold">Vision</span>
 							</h2>
 						</div>
-						<div className="vision-content bout-box slide-fwd-center">
-							<p className=" text-white">
+						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
+							<p className="text-white text-center lg:text-left">
 								Our vision at R&M Roofers LLC is to continue being a leading
 								force in the roofing industry, not only in Hempstead, NY but
 								also in setting industry benchmarks nationwide. With a legacy of
@@ -84,14 +92,14 @@ export default function about() {
 							</p>
 						</div>
 					</div>
-					<div className="container3">
+					<div className="container3 flex flex-col items-center">
 						<div className="whychooseus mb-4">
 							<h2 className="text-center text-4xl">
 								Why <span className="text-[#006800] font-bold">Choose</span> Us
 							</h2>
 						</div>
-						<div className="whychooseus-content bout-box">
-							<p className=" text-white">
+						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
+							<p className="text-white text-center lg:text-left">
 								Why should you choose R&M Roofers LLC for your roofing needs?
 								Because when you choose us, you&apos;re choosing 14 years of
 								unwavering commitment to excellence. Our team is not just
@@ -111,14 +119,14 @@ export default function about() {
 				style={{ backgroundImage: "url(./about-img/fun-facts-bg.jpg)" }}
 			>
 				<div className="row2">
-					<div className="container4 flex md:p-20 justify-evenly">
+					<div className="container4 flex md:p-20 justify-evenly flex-wrap">
 						<div className="context flex flex-col justify-center my-2 md:my-4">
-							<h1 className="text-white text-2xl md:text-4xl font-bold md:mb-8 p-3 pb-0 md:p-0 text-nowrap">
+							<h1 className="text-white text-3xl md:text-4xl font-bold md:mb-8 p-8 pb-0 md:p-0 text-nowrap">
 								<span className="text-yellow-400">Roofing</span> Solutions,{" "}
 								<br /> Roofing
 								<span className="text-yellow-400"> Peace of Mind. </span>
 							</h1>
-							<p className="text-white text-pretty md:p-0 p-8">
+							<p className="text-white text-pretty md:p-0 p-4">
 								Our journey has been marked by a steadfast commitment to
 								delivering roofing solutions that protect and enhance your
 								property. Whether it&apos;s a residential roof that shields your
@@ -127,42 +135,76 @@ export default function about() {
 								stand up to the challenges of time and weather.
 							</p>
 						</div>
-						<div className=" w-3/5 flex justify-center items-center">
-							<div className="conte md:grid md:grid-cols-2 md:grid-rows-2 justify-evenly items-center gap-10">
+						<div className="flex justify-center items-center">
+							<div className="conte grid grid-cols-2 grid-rows-2 justify-evenly items-center gap-4 gap-x-10 md:gap-10">
 								{/* col 1 row 1 */}
-								<div className="conte-box bg-[#fafafa1a] w-24 mb-4 md:mb-0 md:w-32 h-full p-4">
+								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
 									<h2 className="text-4xl text-white text-center font-bold">
 										{8}
 									</h2>
-									<p className="text-center text-white">Year Of Exp.</p>
+									<p
+										style={{
+											fontFamily:
+												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+										}}
+										className="text-center text-white"
+									>
+										Year Of Exp.
+									</p>
 								</div>
 								{/* col 2 row 1 */}
-								<div className="conte-box bg-[#fafafa1a] w-24 mb-4 md:mb-0 md:w-32 h-full p-4">
+								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
 									<h2 className="text-4xl text-white text-center font-bold">
 										{1080}
 									</h2>
-									<p className="text-center text-white">Great Reviews</p>
+									<p
+										style={{
+											fontFamily:
+												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+										}}
+										className="text-center text-white"
+									>
+										Great Reviews
+									</p>
 								</div>
 								{/* col 1 row 2 */}
-								<div className="conte-box bg-[#fafafa1a] w-24 mb-4 md:mb-0 md:w-32 h-full p-4">
+								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
 									<h2 className="text-4xl text-white text-center font-bold">
 										{500}k
 									</h2>
-									<p className="text-center text-white">Projects done</p>
+									<p
+										style={{
+											fontFamily:
+												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+										}}
+										className="text-center text-white"
+									>
+										Projects done
+									</p>
 								</div>
 								{/* col 2 row 2 */}
-								<div className="conte-box bg-[#fafafa1a] w-24 mb-4 md:mb-0 md:w-32 h-full p-4">
+								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
 									<h2 className="text-4xl text-white text-center font-bold">
 										{11}
 									</h2>
-									<p className="text-center text-white">empolyes</p>
+									<p
+										style={{
+											fontFamily:
+												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+										}}
+										className="text-center text-white"
+									>
+										empolyes
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				{/* Google Map */}
-                <h1 className="text-3xl font-bold w-screen text-center text-white">Locate <span className="text-yellow-400">Us</span></h1>
+				<h1 className="text-3xl font-bold w-screen text-center text-white py-10">
+					Locate <span className="text-yellow-400">Us</span>
+				</h1>
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d772735.4125394421!2d-73.60846191071508!3d40.83899534411069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c27d62e4f9ddb1%3A0x4011d350bc4eb5b0!2sR%26M%20Roofers%20LLC!5e0!3m2!1sen!2sin!4v1734872222400!5m2!1sen!2sin"
 					width="100%"

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Wrapper0() {
 	return (
-		<div style={{backgroundImage: 'url(./graphics2.jpg)'}} className="wraper-0 bg-gradient-to-b from-[#242424] to-[#efefef] flex flex-col relative overflow-hidden">
+		<div style={{backgroundImage: 'url(./graphics2.jpg)'}} className="wraper-0 bg-gray-800 flex flex-col relative overflow-hidden">
 			{/* Decorative Background Elements */}
-			<div className="absolute inset-0 bg-black opacity-10 pointer-events-none"></div>
+			<div className="absolute inset-0 bg-black/35 pointer-events-none"></div>
 
 			{/* Section Header */}
 			<div className="text-white text-lg pt-16 px-4 md:px-12 relative z-10">
@@ -24,8 +24,8 @@ export default function Wrapper0() {
 			</div>
 
 			{/* Footer with Call-to-Action */}
-			<div className="flex flex-col justify-center items-center pb-16">
-				<h1 className="text-4xl font-bold pt-8 pb-4 col-span-4">
+			<div className="flex flex-col justify-center items-center pb-16 z-10">
+				<h1 className="text-4xl font-bold pt-8 pb-4 col-span-4 stroke-white stroke-2">
 					Explore
 				</h1>
 				<Link
@@ -86,10 +86,10 @@ function ImageCards() {
 					/>
 
 					{/* Overlay */}
-					<div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+					<div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
 					{/* Content */}
-					<div className="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
+					<div className="absolute bottom-0 left-0 p-4 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
 						<p>{image.title}</p>
 						<h3 className="text-lg font-bold">{image.description}</h3>
 					</div>

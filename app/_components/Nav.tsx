@@ -27,11 +27,11 @@ export default function Nav() {
 			{/* Top Bar */}
 			<div className="bg-[#006800] flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full h-24 md:h-20 px-4">
 				{/* md:Left Side  sm:Above */}
-				<div className="flex items-center">
+				<div className="flex">
 					<Link
 						href="tel:+1516-233-9506"
 						target="_blank"
-						className="mx-2 px-6 border-white border-x-2 text-white flex flex-row gap-2"
+						className="mx-2 px-6 border-white border-x-2 text-white flex flex-row gap-2 "
 					>
 						<FaClock className="mt-1" />
 						Mon-Fri 09:00-17:00
@@ -39,7 +39,8 @@ export default function Nav() {
 					<Link
 						href="tel:+1516-233-9506"
 						target="_blank"
-						className="mx-2 border-r-2 px-4 text-white flex flex-row gap-2"
+						className="mx-2 px-6 border-white border-r-2 text-white flex flex-row gap-2 pt-3 md:pt-0"
+						// className="mx-2 border-r-2 px-4 text-white flex flex-row gap-2"
 					>
 						<FaPhoneAlt className="mt-1" />
 						516-233-9506
@@ -134,19 +135,19 @@ function Links({closeMenu}: {closeMenu: ()=>void}) {
 	return (
 		
 		<div className="flex flex-col md:flex-row md:space-x-6 text-lg">
-			<Link href="/" className={`py-2 hover:text-red-400 ${path === "/" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
+			<Link href="/" className={`py-2 hover:text-red-400 ${path === "/" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
 				HOME
 			</Link>
-			<Link href="/about" className={`py-2 hover:text-red-400 ${path === "/about" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
+			<Link href="/about" className={`py-2 hover:text-red-400 ${path === "/about" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
 				ABOUT
 			</Link>
-			<Link href="/services" className={`py-2 hover:text-red-400 ${path === "/services" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
+			<Link href="/services" className={`py-2 hover:text-red-400 ${path === "/services" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
 				SERVICES
 			</Link>
-			<Link href="/gallery" className={`py-2 hover:text-red-400 ${path === "/gallery" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
+			<Link href="/gallery" className={`py-2 hover:text-red-400 ${path === "/gallery" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
 				GALLERY
 			</Link>
-			<Link href="/contact" className={`py-2 hover:text-red-400 ${path === "/contact" ? "text-yellow-400" : ""}`} onClick={closeMenu}>
+			<Link href="/contact" className={`py-2 hover:text-red-400 ${path === "/contact" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
 				CONTACT
 			</Link>
 		</div>
