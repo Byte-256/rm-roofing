@@ -17,6 +17,8 @@
 /.next/
 /out/
 
+/public/index.html
+/public/index.css
 # production
 /build
 

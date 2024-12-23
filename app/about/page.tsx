@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
-export default function about() {
-	// const [expCount, setExpCount] = useState(8);
-	// const [reviewCount, setreviewCount] = useState(1080);
-	// const [empCount, setempCount] = useState(11);
-	// const [projectCount, setprojectCount] = useState(500);
+export default function About() {
+	const { ref: statsRef, inView: statsVisible } = useInView({
+		triggerOnce: true, // Ensures the animation triggers only once
+		threshold: 0.2, // Triggers when 20% of the section is visible
+	  });
 
 	return (
 		<>
@@ -136,11 +138,11 @@ export default function about() {
 							</p>
 						</div>
 						<div className="flex justify-center items-center">
-							<div className="conte grid grid-cols-2 grid-rows-2 justify-evenly items-center gap-4 gap-x-10 md:gap-10">
+							<div ref={statsRef} className="conte grid grid-cols-2 grid-rows-2 justify-evenly items-center gap-4 gap-x-10 md:gap-10">
 								{/* col 1 row 1 */}
-								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
+								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
 									<h2 className="text-4xl text-white text-center font-bold">
-										{8}
+									{statsVisible && <CountUp start={0} end={8} duration={2} />}
 									</h2>
 									<p
 										style={{
@@ -153,9 +155,9 @@ export default function about() {
 									</p>
 								</div>
 								{/* col 2 row 1 */}
-								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
+								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
 									<h2 className="text-4xl text-white text-center font-bold">
-										{1080}
+									{statsVisible && <CountUp start={0} end={1080} duration={1.5} /> }
 									</h2>
 									<p
 										style={{
@@ -168,9 +170,9 @@ export default function about() {
 									</p>
 								</div>
 								{/* col 1 row 2 */}
-								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
+								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
 									<h2 className="text-4xl text-white text-center font-bold">
-										{500}k
+									{statsVisible && <CountUp start={0} end={500} suffix="k" duration={1.5} />}
 									</h2>
 									<p
 										style={{
@@ -183,9 +185,9 @@ export default function about() {
 									</p>
 								</div>
 								{/* col 2 row 2 */}
-								<div className="conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4">
+								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
 									<h2 className="text-4xl text-white text-center font-bold">
-										{11}
+									{statsVisible && <CountUp start={0} end={11} duration={1.8} />}
 									</h2>
 									<p
 										style={{

@@ -72,7 +72,7 @@ export default function Services() {
 			</section>
 			{/* Showcasing Available Service */}
 			<section
-				style={{ backgroundImage: "url(./graphics.png)" }}
+				style={{ backgroundImage: "url(./image/graphics.png)" }}
 				className="bg-cover bg-center py-20"
 			>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-1 place-items-center">
@@ -128,7 +128,7 @@ function Details({ data }: { data: dataProp }) {
 		<section
 			ref={data.ref}
 			className="px-4 py-12 bg-gray-50"
-			style={{ backgroundImage: "url(./graphics2.jpg)" }}
+			style={{ backgroundImage: "url(./image/graphics2.jpg)" }}
 		>
 			<h1 className="text-3xl text-[#006800] font-sans font-bold text-center mb-8">
 				{data.title}
