@@ -66,9 +66,9 @@ export default function FindUs() {
 			</div>
 
 			<section
-				className="bg-fixed bg-no-repeat bg-cover w-full pb-32 mt-12"
+				className="bg-fixed bg-no-repeat bg-cover w-full pb-32 mt-12 relative"
 				style={{ backgroundImage: "url('./image/roofing-bg.jpg" }}
-			>
+			>	
 				<div className="flex flex-col font-semibold md:font-normal mx-auto md:mx-36">
 
 					<div className="w-full">
@@ -80,7 +80,7 @@ export default function FindUs() {
 							className="block mx-auto max-w-96"
 						/>
 					</div>
-					<div className="cont-p mx-8">
+					<div className="cont-p mx-8 z-10">
 						<p className="text-center text-xl text-white text-pretty">
 							Why should you choose R&M Roofers LLC for your roofing needs?
 							Because when you choose us, you{"'"}re choosing 14 years of unwavering
@@ -91,6 +91,7 @@ export default function FindUs() {
 						</p>
 					</div>
 				</div>
+			<div className="absolute inset-0 bg-black/5"></div>
 			</section>
 		</div>
 	);

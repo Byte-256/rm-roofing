@@ -9,7 +9,6 @@ import {
 	FaEnvelope,
 	FaFacebook,
 	FaInstagram,
-	FaLinkedin,
 	FaMapMarked,
 	FaPhoneAlt,
 	FaWhatsapp,

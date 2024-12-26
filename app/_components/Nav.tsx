@@ -6,7 +6,6 @@ import {
 	FaClock,
 	FaFacebook,
 	FaInstagram,
-	FaLinkedin,
 	FaPhoneAlt,
 	FaWhatsapp,
 	FaYelp,

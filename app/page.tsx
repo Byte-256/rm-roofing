@@ -3,9 +3,10 @@ import Experience from "./_components/Experience";
 import Experience2 from "./_components/Experience2";
 import FindUs from "./_components/Findus";
 import Hero from "./_components/Hero";
+import Showcase from "./_components/Showcase";
 import Wrapper0 from "./_components/Wrapper0";
 import { About2 } from "./about/page";
-import { dataProp, Showcase } from "./services/page";
+import { dataProp } from "./services/page";
 
 export default function Home() {
 
@@ -44,11 +45,12 @@ export default function Home() {
 			<Hero />
 			<Experience />
 			<FindUs />
+			<Experience2 />
 			<Wrapper0 />
 			<About2 />
-			<Experience2 />
-			<h2 className="text-4xl text-center font-bold">Our <span className="text-yellow-300">Service</span></h2>
+			<h2 className="text-4xl text-center font-bold pt-20">Our <span className="text-yellow-300">Service</span></h2>
 			<Showcase service_data={ShowcaseCardData}/>
 		</>
 	);
 }
+

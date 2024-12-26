@@ -163,7 +163,7 @@ export default function About() {
 export function About2(){
 	return(
 		<section
-				className="about2 py-10 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
+				className="about2 py-5 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
 				style={{ backgroundImage: "url(./about-img/about-shap-1.png)" }}
 			>
 				<div className="flex flex-col lg:flex-row gap-4 px-3 w-full lg:w-auto">
