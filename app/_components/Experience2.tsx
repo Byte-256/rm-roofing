@@ -1,12 +1,19 @@
 "use client";
 
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
 export default function Experience2() {
+	const { ref: statsRef, inView: statsVisible } = useInView({
+		triggerOnce: true, // Ensures the animation triggers only once
+		threshold: 0.2, // Triggers when 20% of the section is visible
+	});
 	return (
 		<div
 			className="bg-fixed bg-no-repeat bg-cover bg-[50%] py-36 relative"
 			style={{
 				backgroundImage:
-					'url("https://firebasestorage.googleapis.com/v0/b/clientesimages.appspot.com/o/Paginas%2F6542b58cc5319b25a21a65e0%2Fstock%2FR%26M%20Roofers%20LLC-2023-11-01T20%3A35%3A27.077Z-4.jpg?alt=media&amp;token=88839fcf-bac8-4dff-9fd4-3d9db861fd82")',
+					'url("./image/Experience2.jpg")',
 			}}
 		>
 			<div className="absolute inset-0 bg-black/45"></div>
@@ -15,30 +22,30 @@ export default function Experience2() {
 				Crafting Roofs that Endure.
 			</h2>
 			<div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-				<div className="text-center p-3 relative bg-[#50c519]">
+				<div className="text-center p-3 relative bg-[#50c519]" ref={statsRef}>
 					<div>
-						<span className="text-white text-[69px]">14</span>
+						<span className="text-white text-[69px]"><CountUp start={0} end={14} duration={1.5} redraw={statsVisible}/></span>
 						<span className="text-white text-[69px]">+</span>
 					</div>
 					<p className="text-white text-[18px]">Years Of Experience</p>
 				</div>
 				<div className="text-center p-3 relative bg-[#e8ac05]">
 					<div>
-						<span className="text-white text-[69px]">100</span>
+						<span className="text-white text-[69px]"><CountUp start={0} end={100} duration={1.2}  redraw={statsVisible}/></span>
 						<span className="text-white text-[69px]">%</span>
 					</div>
 					<p className="text-white text-[18px]">Professionals</p>
 				</div>
 				<div className="text-center p-3 relative bg-[#50c519]">
 					<div>
-						<span className="text-white text-[69px]">25</span>
+						<span className="text-white text-[69px]"><CountUp start={0} end={25} duration={1.5}  redraw={statsVisible}/></span>
 						<span className="text-white text-[69px]">+</span>
 					</div>
 					<p className="text-white text-[18px]">Miles Around Hempstead, NY</p>
 				</div>
 				<div className="text-center p-3 relative bg-[#e8ac05]">
 					<div>
-						<span className="text-white text-[69px]">100</span>
+						<span className="text-white text-[69px]"><CountUp start={0} end={100} duration={1.2}  redraw={statsVisible}/></span>
 						<span className="text-white text-[69px]">%</span>
 					</div>
 					<p className="text-white text-[18px]">On Time</p>

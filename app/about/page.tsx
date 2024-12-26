@@ -7,7 +7,7 @@ export default function About() {
 	const { ref: statsRef, inView: statsVisible } = useInView({
 		triggerOnce: true, // Ensures the animation triggers only once
 		threshold: 0.2, // Triggers when 20% of the section is visible
-	  });
+	});
 
 	return (
 		<>
@@ -31,7 +31,7 @@ export default function About() {
 								fontFamily:
 									"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
 							}}
-							className=" relative px-6 after:bottom-[47%] after:bg-[#006800] after:content-[''] after:absolute after:w-4 after:h-1 after:left-0 inter"
+							className=" relative px-6 after:bottom-[47%] after:bg-primary after:content-[''] after:absolute after:w-4 after:h-1 after:left-0 inter"
 						>
 							WHAT ARE WE
 						</p>
@@ -79,11 +79,18 @@ export default function About() {
 							</p>
 						</div>
 						<div className="flex justify-center items-center">
-							<div ref={statsRef} className="conte grid grid-cols-2 grid-rows-2 justify-evenly items-center gap-4 gap-x-10 md:gap-10">
+							<div
+								ref={statsRef}
+								className="conte grid grid-cols-2 grid-rows-2 justify-evenly items-center gap-4 gap-x-10 md:gap-10"
+							>
 								{/* col 1 row 1 */}
-								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
+								<div
+									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
+										statsVisible ? "visible" : ""
+									}`}
+								>
 									<h2 className="text-4xl text-white text-center font-bold">
-									{statsVisible && <CountUp start={0} end={8} duration={2} />}
+										{statsVisible && <CountUp start={0} end={8} duration={2} />}
 									</h2>
 									<p
 										style={{
@@ -96,9 +103,15 @@ export default function About() {
 									</p>
 								</div>
 								{/* col 2 row 1 */}
-								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
+								<div
+									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
+										statsVisible ? "visible" : ""
+									}`}
+								>
 									<h2 className="text-4xl text-white text-center font-bold">
-									{statsVisible && <CountUp start={0} end={1080} duration={1.5} /> }
+										{statsVisible && (
+											<CountUp start={0} end={1080} duration={1.5} />
+										)}
 									</h2>
 									<p
 										style={{
@@ -111,9 +124,15 @@ export default function About() {
 									</p>
 								</div>
 								{/* col 1 row 2 */}
-								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
+								<div
+									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
+										statsVisible ? "visible" : ""
+									}`}
+								>
 									<h2 className="text-4xl text-white text-center font-bold">
-									{statsVisible && <CountUp start={0} end={500} suffix="k" duration={1.5} />}
+										{statsVisible && (
+											<CountUp start={0} end={500} suffix="k" duration={1.5} />
+										)}
 									</h2>
 									<p
 										style={{
@@ -126,9 +145,15 @@ export default function About() {
 									</p>
 								</div>
 								{/* col 2 row 2 */}
-								<div className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${statsVisible? "visible": ''}`}>
+								<div
+									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
+										statsVisible ? "visible" : ""
+									}`}
+								>
 									<h2 className="text-4xl text-white text-center font-bold">
-									{statsVisible && <CountUp start={0} end={11} duration={1.8} />}
+										{statsVisible && (
+											<CountUp start={0} end={11} duration={1.8} />
+										)}
 									</h2>
 									<p
 										style={{
@@ -160,67 +185,66 @@ export default function About() {
 		</>
 	);
 }
-export function About2(){
-	return(
+export function About2() {
+	return (
 		<section
-				className="about2 py-5 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
-				style={{ backgroundImage: "url(./about-img/about-shap-1.png)" }}
-			>
-				<div className="flex flex-col lg:flex-row gap-4 px-3 w-full lg:w-auto">
-					<div className="container1 flex flex-col items-center">
-						<div className="mission mb-4">
-							<h2 className="text-center text-4xl">
-								Our <span className="text-[#006800] font-bold">Mission</span>
-							</h2>
-						</div>
-						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
-							<p className="text-white text-center">
-								At R&M Roofers LLC, our mission is clear and resolute: to
-								provide roofing solutions that protect, enhance, and endure.
-								With 14 years of roofing expertise, we understand the critical
-								role that your roof plays in safeguarding your home or business.
-								Our mission is to deliver roofing services that go beyond mere
-								functionality; we aim to create roofs that provide peace of
-								mind. <br /> &nbsp;{" "}
-							</p>
-						</div>
+			className="about2 py-5 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
+			style={{ backgroundImage: "url(./about-img/about-shap-1.png)" }}
+		>
+			<div className="flex flex-col lg:flex-row gap-4 px-3 w-full lg:w-auto">
+				<div className="container1 flex flex-col items-center">
+					<div className="mission mb-4">
+						<h2 className="text-center text-4xl">
+							Our <span className="text-primary font-bold">Mission</span>
+						</h2>
 					</div>
-					<div className="container2 flex flex-col items-center md:p-10">
-						<div className="vision mb-4">
-							<h2 className="text-center text-4xl">
-								Our <span className="text-[#006800] font-bold">Vision</span>
-							</h2>
-						</div>
-						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
-							<p className="text-white text-center lg:text-left">
-								Our vision at R&M Roofers LLC is to continue being a leading
-								force in the roofing industry, not only in Hempstead, NY but
-								also in setting industry benchmarks nationwide. With a legacy of
-								14 years, we aspire to redefine what roofing excellence means.
-								We envision a future where our name is synonymous with
-								integrity, innovation, and customer satisfaction.
-							</p>
-						</div>
-					</div>
-					<div className="container3 flex flex-col items-center">
-						<div className="whychooseus mb-4">
-							<h2 className="text-center text-4xl">
-								Why <span className="text-[#006800] font-bold">Choose</span> Us
-							</h2>
-						</div>
-						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
-							<p className="text-white text-center lg:text-left">
-								Why should you choose R&M Roofers LLC for your roofing needs?
-								Because when you choose us, you&apos;re choosing 14 years of
-								unwavering commitment to excellence. Our team is not just
-								experienced; we are passionate about providing roofing solutions
-								that protect your investment. We understand the significance of
-								your roof, and we approach every project with meticulous care
-								and expertise.{" "}
-							</p>
-						</div>
+					<div className="bout-box bg-primary max-w-[94%] text-white p-6 rounded-md shadow-md">
+						<p className="text-white text-center">
+							At R&M Roofers LLC, our mission is clear and resolute: to provide
+							roofing solutions that protect, enhance, and endure. With 14 years
+							of roofing expertise, we understand the critical role that your
+							roof plays in safeguarding your home or business. Our mission is
+							to deliver roofing services that go beyond mere functionality; we
+							aim to create roofs that provide peace of mind. <br /> &nbsp;{" "}
+						</p>
 					</div>
 				</div>
-			</section>
-	)
+				<div className="container2 flex flex-col items-center md:p-10">
+					<div className="vision mb-4">
+						<h2 className="text-center text-4xl">
+							Our <span className="text-primary font-bold">Vision</span>
+						</h2>
+					</div>
+					<div className="bout-box bg-primary max-w-[94%] text-white p-6 rounded-md shadow-md">
+						<p className="text-white text-center lg:text-left">
+							Our vision at R&M Roofers LLC is to continue being a leading force
+							in the roofing industry, not only in Hempstead, NY but also in
+							setting industry benchmarks nationwide. With a legacy of 14 years,
+							we aspire to redefine what roofing excellence means. We envision a
+							future where our name is synonymous with integrity, innovation,
+							and customer satisfaction.
+						</p>
+					</div>
+				</div>
+				<div className="container3 flex flex-col items-center">
+					<div className="whychooseus mb-4">
+						<h2 className="text-center text-4xl">
+							Why <span className="text-primary font-bold">Choose</span> Us
+						</h2>
+					</div>
+					<div className="bout-box bg-primary max-w-[94%] text-white p-6 rounded-md shadow-md">
+						<p className="text-white text-center lg:text-left">
+							Why should you choose R&M Roofers LLC for your roofing needs?
+							Because when you choose us, you&apos;re choosing 14 years of
+							unwavering commitment to excellence. Our team is not just
+							experienced; we are passionate about providing roofing solutions
+							that protect your investment. We understand the significance of
+							your roof, and we approach every project with meticulous care and
+							expertise.{" "}
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }

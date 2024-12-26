@@ -82,7 +82,7 @@ function Details({ data }: { data: dataProp }) {
 			className="px-4 py-12 bg-gray-50"
 			style={{ backgroundImage: "url(./image/graphics2.jpg)" }}
 		>
-			<h1 className="text-3xl text-[#006800] font-sans font-bold text-center mb-8">
+			<h1 className="text-3xl text-primary font-sans font-bold text-center mb-8">
 				{data.title}
 			</h1>
 
@@ -110,4 +110,3 @@ function Details({ data }: { data: dataProp }) {
 		</section>
 	);
 }
-

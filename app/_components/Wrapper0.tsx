@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Wrapper0() {
 	return (
-		<div style={{backgroundImage: 'url(./image/graphics2.jpg)'}} className="wraper-0 bg-gray-800 flex flex-col relative overflow-hidden">
+		<div
+			style={{ backgroundImage: "url(./image/graphics2.jpg)" }}
+			className="wraper-0 bg-gray-800 flex flex-col relative overflow-hidden"
+		>
 			{/* Decorative Background Elements */}
 			<div className="absolute inset-0 bg-black/35 pointer-events-none"></div>
 
@@ -30,7 +33,7 @@ export default function Wrapper0() {
 				</h1>
 				<Link
 					href="/gallery"
-					className="bg-[#006800] text-white px-4 py-2 rounded-md underline hover:bg-amber-300 hover:text-black"
+					className="bg-primary text-white px-4 py-2 rounded-md underline hover:bg-amber-300 hover:text-black"
 				>
 					More
 				</Link>

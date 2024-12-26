@@ -90,3 +90,12 @@ button:focus {
 	opacity: 1;
 	transform: translateY(0);
   }
+
+  /* Contact */
+
+  .sec2-contact {
+    margin: 5% 8%;
+    background-color: #ffcb00;
+    border-radius: 5rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

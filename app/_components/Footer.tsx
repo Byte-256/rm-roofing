@@ -36,7 +36,7 @@ export function Footer() {
 					href={"tel:+8469025092"}
 					className="foot-contact flex items-center gap-2.5"
 				>
-					<div className="flex justify-center items-center bg-amber-300 text-white text-lg w-8 h-8 hover:animate-spin hover:bg-white hover:text-[#006800] animate-bounce rounded-full">
+					<div className="flex justify-center items-center bg-amber-300 text-white text-lg w-8 h-8 hover:animate-spin hover:bg-white hover:text-primary animate-bounce rounded-full">
 						<FaPhoneAlt />
 					</div>
 					<div className="">

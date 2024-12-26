@@ -1,16 +1,14 @@
-
-import Experience from "./_components/Experience";
-import Experience2 from "./_components/Experience2";
-import FindUs from "./_components/Findus";
-import Hero from "./_components/Hero";
-import Showcase from "./_components/Showcase";
-import Wrapper0 from "./_components/Wrapper0";
-import { About2 } from "./about/page";
-import { dataProp } from "./services/page";
+import Experience from "@/app/_components/Experience";
+import Experience2 from "@/app/_components/Experience2";
+import FindUs from "@/app/_components/Findus";
+import Hero from "@/app/_components/Hero";
+import Showcase from "@/app/_components/Showcase";
+import Wrapper0 from "@/app/_components/Wrapper0";
+import { About2 } from "@/app/about/page";
+import { dataProp } from "@/app/services/page";
 
 export default function Home() {
-
-	const ShowcaseCardData : dataProp[] = [
+	const ShowcaseCardData: dataProp[] = [
 		{
 			title: "Shingle Roofing",
 			img: ["./services-img/1-1.jpg", "./services-img/1-2.jpg"],
@@ -48,9 +46,10 @@ export default function Home() {
 			<Experience2 />
 			<Wrapper0 />
 			<About2 />
-			<h2 className="text-4xl text-center font-bold pt-20">Our <span className="text-yellow-300">Service</span></h2>
-			<Showcase service_data={ShowcaseCardData}/>
+			<h2 className="text-4xl text-center font-bold pt-20">
+				Our <span className="text-yellow-300">Service</span>
+			</h2>
+			<Showcase service_data={ShowcaseCardData} />
 		</>
 	);
 }
-
