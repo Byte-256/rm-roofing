@@ -14,6 +14,7 @@ import {
 	FaPhoneAlt,
 	FaWhatsapp,
 	FaWindowClose,
+	FaYelp,
 } from "react-icons/fa";
 
 export function Footer() {
@@ -47,28 +48,28 @@ export function Footer() {
 				<div className="foot-social flex gap-2 md:gap-4">
 					<Link
 						rel="nofollow"
-						href="https://www.facebook.com/profile.php?id=61561068159882"
+						href="https://www.facebook.com/profile.php?id=100082961067383" //Changed!
 						target="_blank"
 						className="text-2xl hover:text-yellow-300"
 					>
 						<FaFacebook />
 					</Link>
 					<Link
-						href="https://www.linkedin.com/in/ss-india-roofing-b10647317/"
+						href="https://www.yelp.com/biz/r-and-m-roofers-hempstead-5" // Changed!
 						target="_blank"
 						className="text-2xl hover:text-yellow-300"
 					>
-						<FaLinkedin />
+						<FaYelp />
 					</Link>
 					<Link
-						href="https://wa.me/+918610486372"
+						href="https://wa.me/+15162339506" // Changed!
 						target="_blank"
 						className="text-2xl hover:text-yellow-300"
 					>
 						<FaWhatsapp />
 					</Link>
 					<Link
-						href="https://www.instagram.com/ssinidaroofing/"
+						href="https://www.instagram.com/ssinidaroofing/" //Changed!
 						target="_blank"
 						className="text-2xl hover:text-yellow-300"
 					>

@@ -54,66 +54,7 @@ export default function About() {
 			</section>
 
 			{/* About 2 */}
-			<section
-				className="about2 py-10 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
-				style={{ backgroundImage: "url(./about-img/about-shap-1.png)" }}
-			>
-				<div className="flex flex-col lg:flex-row gap-4 px-3 w-full lg:w-auto">
-					<div className="container1 flex flex-col items-center">
-						<div className="mission mb-4">
-							<h2 className="text-center text-4xl">
-								Our <span className="text-[#006800] font-bold">Mission</span>
-							</h2>
-						</div>
-						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
-							<p className="text-white text-center">
-								At R&M Roofers LLC, our mission is clear and resolute: to
-								provide roofing solutions that protect, enhance, and endure.
-								With 14 years of roofing expertise, we understand the critical
-								role that your roof plays in safeguarding your home or business.
-								Our mission is to deliver roofing services that go beyond mere
-								functionality; we aim to create roofs that provide peace of
-								mind. <br /> &nbsp;{" "}
-							</p>
-						</div>
-					</div>
-					<div className="container2 flex flex-col items-center md:p-10">
-						<div className="vision mb-4">
-							<h2 className="text-center text-4xl">
-								Our <span className="text-[#006800] font-bold">Vision</span>
-							</h2>
-						</div>
-						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
-							<p className="text-white text-center lg:text-left">
-								Our vision at R&M Roofers LLC is to continue being a leading
-								force in the roofing industry, not only in Hempstead, NY but
-								also in setting industry benchmarks nationwide. With a legacy of
-								14 years, we aspire to redefine what roofing excellence means.
-								We envision a future where our name is synonymous with
-								integrity, innovation, and customer satisfaction.
-							</p>
-						</div>
-					</div>
-					<div className="container3 flex flex-col items-center">
-						<div className="whychooseus mb-4">
-							<h2 className="text-center text-4xl">
-								Why <span className="text-[#006800] font-bold">Choose</span> Us
-							</h2>
-						</div>
-						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
-							<p className="text-white text-center lg:text-left">
-								Why should you choose R&M Roofers LLC for your roofing needs?
-								Because when you choose us, you&apos;re choosing 14 years of
-								unwavering commitment to excellence. Our team is not just
-								experienced; we are passionate about providing roofing solutions
-								that protect your investment. We understand the significance of
-								your roof, and we approach every project with meticulous care
-								and expertise.{" "}
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+			<About2 />
 
 			{/* About 3 */}
 			<section
@@ -218,4 +159,68 @@ export default function About() {
 			</section>
 		</>
 	);
+}
+export function About2(){
+	return(
+		<section
+				className="about2 py-10 flex flex-col justify-center items-center lg:flex-row lg:justify-center sm:p-40 bg-no-repeat bg-right-bottom"
+				style={{ backgroundImage: "url(./about-img/about-shap-1.png)" }}
+			>
+				<div className="flex flex-col lg:flex-row gap-4 px-3 w-full lg:w-auto">
+					<div className="container1 flex flex-col items-center">
+						<div className="mission mb-4">
+							<h2 className="text-center text-4xl">
+								Our <span className="text-[#006800] font-bold">Mission</span>
+							</h2>
+						</div>
+						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
+							<p className="text-white text-center">
+								At R&M Roofers LLC, our mission is clear and resolute: to
+								provide roofing solutions that protect, enhance, and endure.
+								With 14 years of roofing expertise, we understand the critical
+								role that your roof plays in safeguarding your home or business.
+								Our mission is to deliver roofing services that go beyond mere
+								functionality; we aim to create roofs that provide peace of
+								mind. <br /> &nbsp;{" "}
+							</p>
+						</div>
+					</div>
+					<div className="container2 flex flex-col items-center md:p-10">
+						<div className="vision mb-4">
+							<h2 className="text-center text-4xl">
+								Our <span className="text-[#006800] font-bold">Vision</span>
+							</h2>
+						</div>
+						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
+							<p className="text-white text-center lg:text-left">
+								Our vision at R&M Roofers LLC is to continue being a leading
+								force in the roofing industry, not only in Hempstead, NY but
+								also in setting industry benchmarks nationwide. With a legacy of
+								14 years, we aspire to redefine what roofing excellence means.
+								We envision a future where our name is synonymous with
+								integrity, innovation, and customer satisfaction.
+							</p>
+						</div>
+					</div>
+					<div className="container3 flex flex-col items-center">
+						<div className="whychooseus mb-4">
+							<h2 className="text-center text-4xl">
+								Why <span className="text-[#006800] font-bold">Choose</span> Us
+							</h2>
+						</div>
+						<div className="bout-box bg-[#006800] max-w-[94%] text-white p-6 rounded-md shadow-md">
+							<p className="text-white text-center lg:text-left">
+								Why should you choose R&M Roofers LLC for your roofing needs?
+								Because when you choose us, you&apos;re choosing 14 years of
+								unwavering commitment to excellence. Our team is not just
+								experienced; we are passionate about providing roofing solutions
+								that protect your investment. We understand the significance of
+								your roof, and we approach every project with meticulous care
+								and expertise.{" "}
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+	)
 }

@@ -9,6 +9,7 @@ import {
 	FaLinkedin,
 	FaPhoneAlt,
 	FaWhatsapp,
+	FaYelp,
 } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 
@@ -25,7 +26,7 @@ export default function Nav() {
 	return (
 		<nav className="w-full">
 			{/* Top Bar */}
-			<div className="bg-[#006800] flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full h-24 md:h-20 px-4">
+			<div className="bg-[#006800] flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full gap-y-2 md:gap-y-0 md:h-20 px-4 pt-4 md:pt-0">
 				{/* md:Left Side  sm:Above */}
 				<div className="flex">
 					<Link
@@ -52,36 +53,36 @@ export default function Nav() {
 					<div className="md:px-4 px-6 border-white border-x-2">
 						<Link
 							rel="nofollow"
-							href="https://www.facebook.com/profile.php?id=61561068159882"
+							href="https://www.facebook.com/profile.php?id=100082961067383" // Changed!
 							target="_blank"
-							className="text-white text-lg md:text-2xl"
+							className="text-white text-2xl"
 						>
 							<FaFacebook />
 						</Link>
 					</div>
 					<div className="md:pr-4 pr-6 border-white border-e-2">
 						<Link
-							href="https://www.linkedin.com/in/ss-india-roofing-b10647317/"
+							href="https://www.yelp.com/biz/r-and-m-roofers-hempstead-5" // Changed From LinkedIn to Yelp
 							target="_blank"
-							className="text-white text-lg md:text-2xl"
+							className="text-white text-2xl"
 						>
-							<FaLinkedin />
+							<FaYelp />
 						</Link>
 					</div>
 					<div className="md:pr-4 pr-6 border-white border-e-2">
 						<Link
-							href="https://wa.me/+918610486372"
+							href="https://wa.me/+15162339506" // Changed!
 							target="_blank"
-							className="text-white text-lg md:text-2xl"
+							className="text-white text-2xl"
 						>
 							<FaWhatsapp />
 						</Link>
 					</div>
 					<div className="md:pr-4 pr-6 border-white border-e-2">
 						<Link
-							href="https://www.instagram.com/ssinidaroofing/"
+							href="https://www.instagram.com/rmrooferllc/" // Changed!
 							target="_blank"
-							className="text-white text-lg md:text-2xl"
+							className="text-white text-2xl"
 						>
 							<FaInstagram />
 						</Link>
@@ -114,40 +115,71 @@ export default function Nav() {
 
 				{/* Links (Always Visible on Desktop) */}
 				<div className="hidden md:flex space-x-6">
-					<Links closeMenu={closeMenu}/>
+					<Links closeMenu={closeMenu} />
 				</div>
 			</div>
 
 			{/* Mobile Menu (Visible when toggled) */}
 			<div
 				className={`${
-					isOpen ? "block translate-y-0 opacity-100" : "hidden opacity-0 translate-y-4"
+					isOpen
+						? "block translate-y-0 opacity-100"
+						: "hidden opacity-0 translate-y-4"
 				} md:hidden bg-white shadow-md mt-2 p-4 transition-all duration-500 ease-in-out`}
 			>
-				<Links closeMenu={closeMenu}/>
+				<Links closeMenu={closeMenu} />
 			</div>
 		</nav>
 	);
 }
 
-function Links({closeMenu}: {closeMenu: ()=>void}) {
-	const path = usePathname()
+function Links({ closeMenu }: { closeMenu: () => void }) {
+	const path = usePathname();
 	return (
-		
 		<div className="flex flex-col md:flex-row md:space-x-6 text-lg">
-			<Link href="/" className={`py-2 hover:text-red-400 ${path === "/" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
+			<Link
+				href="/"
+				className={`py-2 hover:text-red-400 ${
+					path === "/" ? "text-yellow-400 font-semibold" : ""
+				}`}
+				onClick={closeMenu}
+			>
 				HOME
 			</Link>
-			<Link href="/about" className={`py-2 hover:text-red-400 ${path === "/about" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
+			<Link
+				href="/about"
+				className={`py-2 hover:text-red-400 ${
+					path === "/about" ? "text-yellow-400 font-semibold" : ""
+				}`}
+				onClick={closeMenu}
+			>
 				ABOUT
 			</Link>
-			<Link href="/services" className={`py-2 hover:text-red-400 ${path === "/services" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
+			<Link
+				href="/services"
+				className={`py-2 hover:text-red-400 ${
+					path === "/services" ? "text-yellow-400 font-semibold" : ""
+				}`}
+				onClick={closeMenu}
+			>
 				SERVICES
 			</Link>
-			<Link href="/gallery" className={`py-2 hover:text-red-400 ${path === "/gallery" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
+			<Link
+				href="/gallery"
+				className={`py-2 hover:text-red-400 ${
+					path === "/gallery" ? "text-yellow-400 font-semibold" : ""
+				}`}
+				onClick={closeMenu}
+			>
 				GALLERY
 			</Link>
-			<Link href="/contact" className={`py-2 hover:text-red-400 ${path === "/contact" ? "text-yellow-400 font-semibold" : ""}`} onClick={closeMenu}>
+			<Link
+				href="/contact"
+				className={`py-2 hover:text-red-400 ${
+					path === "/contact" ? "text-yellow-400 font-semibold" : ""
+				}`}
+				onClick={closeMenu}
+			>
 				CONTACT
 			</Link>
 		</div>
