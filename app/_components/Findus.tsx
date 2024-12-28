@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FindUs() {
 	return (
-		<div className="mt-8">
+		<div className="mt-8 md:mt-0">
 			<h1 className="text-center text-4xl font-semibold text-primary mx-12 pb-2">
 				Find Us On
 			</h1>
@@ -70,7 +70,7 @@ export default function FindUs() {
 				style={{ backgroundImage: "url('./image/roofing-bg.jpg" }}
 			>
 				<div className="flex flex-col font-semibold md:font-normal mx-auto md:mx-36">
-					<div className="w-full">
+					<div className="w-full z-10">
 						<Image
 							src="./image/logo.png"
 							alt="RM Roofing Logo"
@@ -91,7 +91,7 @@ export default function FindUs() {
 						</p>
 					</div>
 				</div>
-				<div className="absolute inset-0 bg-black/5"></div>
+				<div className="absolute inset-0 bg-black/45"></div>
 			</section>
 		</div>
 	);

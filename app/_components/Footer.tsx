@@ -49,28 +49,28 @@ export function Footer() {
 						rel="nofollow"
 						href="https://www.facebook.com/profile.php?id=100082961067383" //Changed!
 						target="_blank"
-						className="text-2xl hover:text-yellow-300"
+						className="text-4xl md:text-2xl hover:text-yellow-300"
 					>
 						<FaFacebook />
 					</Link>
 					<Link
 						href="https://www.yelp.com/biz/r-and-m-roofers-hempstead-5" // Changed!
 						target="_blank"
-						className="text-2xl hover:text-yellow-300"
+						className="text-4xl md:text-2xl hover:text-yellow-300"
 					>
 						<FaYelp />
 					</Link>
 					<Link
 						href="https://wa.me/+15162339506" // Changed!
 						target="_blank"
-						className="text-2xl hover:text-yellow-300"
+						className="text-4xl md:text-2xl hover:text-yellow-300"
 					>
 						<FaWhatsapp />
 					</Link>
 					<Link
 						href="https://www.instagram.com/ssinidaroofing/" //Changed!
 						target="_blank"
-						className="text-2xl hover:text-yellow-300"
+						className="text-4xl md:text-2xl hover:text-yellow-300"
 					>
 						<FaInstagram />
 					</Link>

@@ -43,13 +43,24 @@ export default function Home() {
 			<Hero />
 			<Experience />
 			<FindUs />
-			<Experience2 />
 			<Wrapper0 />
+			<Experience2 />
 			<About2 />
-			<h2 className="text-4xl text-center font-bold pt-20">
+			<h2 className="text-4xl text-center font-bold pt-20 md:pt-0">
 				Our <span className="text-yellow-300">Service</span>
 			</h2>
 			<Showcase service_data={ShowcaseCardData} />
+			<h1 className="text-3xl font-bold w-screen text-center py-10">
+				Locate <span className="text-yellow-400">Us</span>
+			</h1>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d772735.4125394421!2d-73.60846191071508!3d40.83899534411069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c27d62e4f9ddb1%3A0x4011d350bc4eb5b0!2sR%26M%20Roofers%20LLC!5e0!3m2!1sen!2sin!4v1734872222400!5m2!1sen!2sin"
+				width="100%"
+				height="500px"
+				frameBorder="0"
+				style={{ border: 0 }}
+				allowFullScreen
+			></iframe>
 		</>
 	);
 }

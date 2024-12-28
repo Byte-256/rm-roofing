@@ -8,7 +8,7 @@ export default function Wrapper0() {
 			className="wraper-0 bg-gray-800 flex flex-col relative overflow-hidden"
 		>
 			{/* Decorative Background Elements */}
-			<div className="absolute inset-0 bg-black/35 pointer-events-none"></div>
+			<div className="absolute inset-0 bg-gradient-to-br from-primary/45 via-slate-500/45 to-primary/45 pointer-events-none"></div>
 
 			{/* Section Header */}
 			<div className="text-white text-lg pt-16 px-4 md:px-12 relative z-10">
@@ -24,23 +24,7 @@ export default function Wrapper0() {
 			{/* Image Cards */}
 			<div className="relative z-10 py-8">
 				<ImageCards />
-			</div>
-
-			{/* Footer with Call-to-Action */}
-			<div className="flex flex-col justify-center items-center pb-16 z-10">
-				<h1 className="text-4xl font-bold pt-8 pb-4 col-span-4 stroke-white stroke-2">
-					Explore
-				</h1>
-				<Link
-					href="/gallery"
-					className="bg-primary text-white px-4 py-2 rounded-md underline hover:bg-amber-300 hover:text-black"
-				>
-					More
-				</Link>
-			</div>
-
-			{/* Decorative Bottom Element */}
-			{/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#242424] to-transparent"></div> */}
+			</div>		
 		</div>
 	);
 }

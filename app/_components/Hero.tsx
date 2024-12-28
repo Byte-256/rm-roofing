@@ -1,12 +1,13 @@
 export default function Hero() {
 	return (
 		<>
+		{/* Section 1 Home */}
 			<section
 				className="sec-1 relative bg-cover py-20 px-6 md:px-20"
 				style={{ backgroundImage: "url(./image/homemainbg.jpg)" }}
 			>
 				{/* Overlay to darken the image */}
-				<div className="absolute inset-0 bg-black/45"></div>
+				<div className="absolute inset-0 bg-black/55"></div>
 
 				{/* Hero Content */}
 				<div className="relative z-10 flex flex-col justify-center items-center text-center md:text-left">
