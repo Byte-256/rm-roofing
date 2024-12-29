@@ -187,14 +187,13 @@ export function Footer() {
 			</div>
 			<div className="sub-footer text-center bg-neutral-100 mt-12 text-xs md:text-base">
 				<p>
-					&copy; Copyright R&M ROOFING 2024. All Rights Reserved. Designed and
-					By
+					&copy; Copyright R&M ROOFING 2024. All Rights Reserved. Designed By
 					<a href="https://github.com/AxwinX" target="_blank">
 						&nbsp;AxwinX&nbsp;
 					</a>
 					&
 					<a target="_blank" href="https://Byte-265.github.io/">
-					&nbsp;Byte-256&nbsp;
+						&nbsp;Byte-256&nbsp;
 					</a>
 				</p>
 			</div>
