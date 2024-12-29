@@ -1,36 +1,56 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Project Structure
 
-First, run the development server:
+The project directory structure is as follows:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+rm-roofing/
+├── public/         # Static assets
+├── src/            # Source files
+│   ├── app/        # Application components
+│   ├── pages/      # Next.js pages
+│   ├── styles/     # CSS styles
+│   └── utils/      # Utility functions
+├── .gitignore      # Git ignore file
+├── package.json    # NPM package configuration
+├── README.md       # Project documentation
+└── tsconfig.json   # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In the project directory, you can run:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `npm run dev`
 
-## Learn More
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To learn more about Next.js, take a look at the following resources:
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `npm run build`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Builds the app for production to the `build` folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Deploy on Vercel
+### `npm run start`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Starts the production build of the app.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `npm run serve`
+
+Build the Project and serve @ localhost:3000.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any bugs, improvements, or features.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## License
+
+This project is proprietary. All rights are reserved by the client. Unauthorized copying, distribution, or modification of this project is strictly prohibited.
