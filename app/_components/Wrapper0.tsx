@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Wrapper0() {
 	return (
@@ -8,7 +7,7 @@ export default function Wrapper0() {
 			className="wraper-0 bg-gray-800 flex flex-col relative overflow-hidden"
 		>
 			{/* Decorative Background Elements */}
-			<div className="absolute inset-0 bg-gradient-to-br from-primary/45 via-slate-500/45 to-primary/45 pointer-events-none"></div>
+			<div className="absolute inset-0 md:h-1/2 lg:h-3/5 bg-[#242424] pointer-events-none"></div>
 
 			{/* Section Header */}
 			<div className="text-white text-lg pt-16 px-4 md:px-12 relative z-10">
@@ -22,7 +21,7 @@ export default function Wrapper0() {
 			</div>
 
 			{/* Image Cards */}
-			<div className="relative z-10 py-8">
+			<div className="relative z-10 py-8 flex justify-end">
 				<ImageCards />
 			</div>		
 		</div>

@@ -44,7 +44,7 @@ export function Footer() {
 						<h3 className="text-lg font-semibold">Call Us: +8469025092</h3>
 					</div>
 				</Link>
-				<div className="foot-social flex gap-2 md:gap-4">
+				<div className="foot-social flex py-4 md:py-0 gap-4">
 					<Link
 						rel="nofollow"
 						href="https://www.facebook.com/profile.php?id=100082961067383" //Changed!
@@ -185,10 +185,17 @@ export function Footer() {
 					</p>
 				</div>
 			</div>
-			<div className="sub-footer text-center text-white mt-12">
+			<div className="sub-footer text-center bg-neutral-100 mt-12 text-xs md:text-base">
 				<p>
 					&copy; Copyright R&M ROOFING 2024. All Rights Reserved. Designed and
-					By AxwinX & Byte-256
+					By
+					<a href="https://github.com/AxwinX" target="_blank">
+						&nbsp;AxwinX&nbsp;
+					</a>
+					&
+					<a target="_blank" href="https://Byte-265.github.io/">
+					&nbsp;Byte-256&nbsp;
+					</a>
 				</p>
 			</div>
 		</footer>

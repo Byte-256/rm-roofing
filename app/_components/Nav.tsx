@@ -25,7 +25,7 @@ export default function Nav() {
 	return (
 		<nav className="w-full">
 			{/* Top Bar */}
-			<div className="bg-primary flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full gap-y-2 md:gap-y-0 md:h-20 px-4 pt-4 md:pt-0">
+			<div className="bg-primary hidden md:flex flex-wrap justify-evenly md:justify-center md:gap-40 items-center w-full gap-y-2 md:gap-y-0 md:h-20 px-4 pt-4 md:pt-0">
 				{/* md:Left Side  sm:Above */}
 				<div className="flex">
 					<Link

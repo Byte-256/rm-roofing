@@ -5,7 +5,7 @@ import Script from "next/script";
 export default function Experience() {
 	return (
 		<section className="mt-24 px-4 md:px-16">
-			<div className="flex flex-col md:flex-row justify-center items-center md:items-start md:gap-14">
+			<div className="sec-expc flex flex-col md:flex-row justify-center items-center md:items-start md:gap-14">
 				{/* Left Column */}
 				<div className="main-menu-text flex flex-col max-w-full md:max-w-[40%] mt-10 md:mt-36 text-center md:text-left">
 					<h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
@@ -35,7 +35,7 @@ export default function Experience() {
 	);
 }
 
-export function ContactForm() {
+function ContactForm() {
 	return (
 		<div className="w-screen h-auto flex justify-center md:justify-end items-center py-10 md:py-16">
 			<div className="w-[90%] md:w-[70%] lg:w-[50%] bg-white rounded-lg overflow-hidden">

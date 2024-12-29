@@ -9,7 +9,7 @@ export default function Gallery() {
 	return (
 		<>
 			<section className="bg-amber-400  p-10 flex justify-center text-center">
-				<h1 className="font-semibold text-3xl">GALLERY</h1>
+				<h1 className="font-semibold text-5xl">GALLERY</h1>
 			</section>
 			<section className="gal-img">
 				{images.map((src, index) => (

@@ -79,7 +79,7 @@ function Details({ data }: { data: dataProp }) {
 	return (
 		<section
 			ref={data.ref}
-			className="px-4 py-12 bg-gray-50"
+			className="px-4 md:px-28 py-12 bg-gray-50"
 			style={{ backgroundImage: "url(./image/graphics2.jpg)" }}
 		>
 			<h1 className="text-3xl text-primary font-sans font-bold text-center mb-8">

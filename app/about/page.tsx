@@ -12,8 +12,8 @@ export default function About() {
 	return (
 		<>
 			<section className="title-banner flex justify-center items-center">
-				<div className="title">
-					<h1 className="text-center underline font-bold text-4xl">About Us</h1>
+				<div className="title bg-primary w-screen p-10">
+					<h1 className="text-center text-white font-bold text-5xl">About Us</h1>
 				</div>
 			</section>
 
@@ -62,14 +62,15 @@ export default function About() {
 				style={{ backgroundImage: "url(./about-img/fun-facts-bg.jpg)" }}
 			>
 				<div className="row2">
-					<div className="container4 flex md:p-20 justify-evenly flex-wrap">
-						<div className="context flex flex-col justify-center my-2 md:my-4">
-							<h1 className="text-white text-3xl md:text-4xl font-bold md:mb-8 p-8 pb-0 md:p-0 text-nowrap">
+					<div className="container4 flex flex-col md:flex-row md:p-20 justify-center items-center flex-wrap md:flex-nowrap">
+						{/* Left Column */}
+						<div className="context flex flex-col justify-center m-4 md:my-8 md:w-1/2">
+							<h1 className="text-white text-3xl md:text-4xl font-bold mb-6 text-nowrap">
 								<span className="text-yellow-400">Roofing</span> Solutions,{" "}
-								<br /> Roofing
-								<span className="text-yellow-400"> Peace of Mind. </span>
+								<br />
+								Roofing<span className="text-yellow-400"> Peace of Mind.</span>
 							</h1>
-							<p className="text-white text-pretty md:p-0 p-4">
+							<p className="text-white text-md md:text-xl leading-relaxed font-sans">
 								Our journey has been marked by a steadfast commitment to
 								delivering roofing solutions that protect and enhance your
 								property. Whether it&apos;s a residential roof that shields your
@@ -78,34 +79,29 @@ export default function About() {
 								stand up to the challenges of time and weather.
 							</p>
 						</div>
-						<div className="flex justify-center items-center">
+
+						{/* Right Column */}
+						<div className="flex justify-center items-center md:w-1/2">
 							<div
 								ref={statsRef}
-								className="conte grid grid-cols-2 grid-rows-2 justify-evenly items-center gap-4 gap-x-10 md:gap-10"
+								className="conte grid grid-cols-2 gap-6 md:gap-10 justify-evenly items-center"
 							>
-								{/* col 1 row 1 */}
+								{/* Grid Item 1 */}
 								<div
-									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
-										statsVisible ? "visible" : ""
+									className={`conte-box bg-[#fafafa1a] w-32 h-32 p-4 rounded-sm pt-8 shadow-md transition-opacity duration-500 ${
+										statsVisible ? "opacity-100" : "opacity-0"
 									}`}
 								>
 									<h2 className="text-4xl text-white text-center font-bold">
 										{statsVisible && <CountUp start={0} end={8} duration={2} />}
 									</h2>
-									<p
-										style={{
-											fontFamily:
-												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-										}}
-										className="text-center text-white"
-									>
-										Year Of Exp.
-									</p>
+									<p className="text-center text-white text-sm">Year Of Exp.</p>
 								</div>
-								{/* col 2 row 1 */}
+
+								{/* Grid Item 2 */}
 								<div
-									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
-										statsVisible ? "visible" : ""
+									className={`conte-box bg-[#fafafa1a] w-32 h-32 p-4 rounded-sm pt-8 shadow-md transition-opacity duration-500 ${
+										statsVisible ? "opacity-100" : "opacity-0"
 									}`}
 								>
 									<h2 className="text-4xl text-white text-center font-bold">
@@ -113,20 +109,15 @@ export default function About() {
 											<CountUp start={0} end={1080} duration={1.5} />
 										)}
 									</h2>
-									<p
-										style={{
-											fontFamily:
-												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-										}}
-										className="text-center text-white"
-									>
+									<p className="text-center text-white text-sm">
 										Great Reviews
 									</p>
 								</div>
-								{/* col 1 row 2 */}
+
+								{/* Grid Item 3 */}
 								<div
-									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
-										statsVisible ? "visible" : ""
+									className={`conte-box bg-[#fafafa1a] w-32 h-32 p-4 rounded-sm pt-8 shadow-md transition-opacity duration-500 ${
+										statsVisible ? "opacity-100" : "opacity-0"
 									}`}
 								>
 									<h2 className="text-4xl text-white text-center font-bold">
@@ -134,20 +125,15 @@ export default function About() {
 											<CountUp start={0} end={500} suffix="k" duration={1.5} />
 										)}
 									</h2>
-									<p
-										style={{
-											fontFamily:
-												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-										}}
-										className="text-center text-white"
-									>
-										Projects done
+									<p className="text-center text-white text-sm">
+										Projects Done
 									</p>
 								</div>
-								{/* col 2 row 2 */}
+
+								{/* Grid Item 4 */}
 								<div
-									className={`conte-box bg-[#fafafa1a] mb-4 md:mb-0 w-32 h-full p-4 fade-in ${
-										statsVisible ? "visible" : ""
+									className={`conte-box bg-[#fafafa1a] w-32 h-32 p-4 rounded-sm pt-8 shadow-md transition-opacity duration-500 ${
+										statsVisible ? "opacity-100" : "opacity-0"
 									}`}
 								>
 									<h2 className="text-4xl text-white text-center font-bold">
@@ -155,32 +141,27 @@ export default function About() {
 											<CountUp start={0} end={11} duration={1.8} />
 										)}
 									</h2>
-									<p
-										style={{
-											fontFamily:
-												"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
-										}}
-										className="text-center text-white"
-									>
-										empolyes
-									</p>
+									<p className="text-center text-white text-sm">Employees</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 				{/* Google Map */}
-				<h1 className="text-3xl font-bold w-screen text-center text-white py-10">
-					Locate <span className="text-yellow-400">Us</span>
-				</h1>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d772735.4125394421!2d-73.60846191071508!3d40.83899534411069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c27d62e4f9ddb1%3A0x4011d350bc4eb5b0!2sR%26M%20Roofers%20LLC!5e0!3m2!1sen!2sin!4v1734872222400!5m2!1sen!2sin"
-					width="100%"
-					height="500px"
-					frameBorder="0"
-					style={{ border: 0 }}
-					allowFullScreen
-				></iframe>
+				<>
+					<h1 className="text-3xl font-bold w-screen text-center text-white py-10">
+						Locate <span className="text-yellow-400">Us</span>
+					</h1>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d772735.4125394421!2d-73.60846191071508!3d40.83899534411069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c27d62e4f9ddb1%3A0x4011d350bc4eb5b0!2sR%26M%20Roofers%20LLC!5e0!3m2!1sen!2sin!4v1734872222400!5m2!1sen!2sin"
+						width="100%"
+						height="500px"
+						frameBorder="0"
+						style={{ border: 0 }}
+						allowFullScreen
+					></iframe>
+				</>
 			</section>
 		</>
 	);
@@ -199,7 +180,7 @@ export function About2() {
 						</h2>
 					</div>
 					<div className="bout-box bg-primary max-w-[94%] text-white p-6 rounded-md shadow-md">
-						<p className="text-white text-center">
+						<p className="text-white text-center leading-8">
 							At R&M Roofers LLC, our mission is clear and resolute: to provide
 							roofing solutions that protect, enhance, and endure. With 14 years
 							of roofing expertise, we understand the critical role that your
@@ -209,14 +190,14 @@ export function About2() {
 						</p>
 					</div>
 				</div>
-				<div className="container2 flex flex-col items-center md:p-10">
+				<div className="container2 flex flex-col items-center md:p-10 md:pt-16">
 					<div className="vision mb-4">
 						<h2 className="text-center text-4xl">
 							Our <span className="text-primary font-bold">Vision</span>
 						</h2>
 					</div>
 					<div className="bout-box bg-primary max-w-[94%] text-white p-6 rounded-md shadow-md">
-						<p className="text-white text-center lg:text-left">
+						<p className="text-white text-center lg:text-left  leading-8">
 							Our vision at R&M Roofers LLC is to continue being a leading force
 							in the roofing industry, not only in Hempstead, NY but also in
 							setting industry benchmarks nationwide. With a legacy of 14 years,
@@ -233,7 +214,7 @@ export function About2() {
 						</h2>
 					</div>
 					<div className="bout-box bg-primary max-w-[94%] text-white p-6 rounded-md shadow-md">
-						<p className="text-white text-center lg:text-left">
+						<p className="text-white text-center lg:text-left leading-8">
 							Why should you choose R&M Roofers LLC for your roofing needs?
 							Because when you choose us, you&apos;re choosing 14 years of
 							unwavering commitment to excellence. Our team is not just

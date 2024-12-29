@@ -18,7 +18,7 @@ export default function Experience2() {
 		>
 			<div className="absolute inset-0 bg-black/45"></div>
 
-			<h2 className="text-center py-4 relative text-white font-bold capitalize text-4xl">
+			<h2 className="text-center py-4 relative text-white font-bold capitalize text-2xl md:text-4xl">
 				Crafting Roofs that Endure.
 			</h2>
 			<div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">

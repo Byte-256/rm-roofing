@@ -9,23 +9,24 @@ import {
 	FaWhatsapp,
 	FaYelp,
 } from "react-icons/fa";
-import { ContactForm } from "../_components/Experience";
 import Image from "next/image";
+import Script from "next/script";
 
 const Contact = () => {
 	return (
 		<section className="flex grow flex-col">
 			{/* Title */}
 			<div className="title flex justify-center items-center bg-primary grow h-40">
-				<h1 className="text-white text-4xl font-medium font-['Inter']">
-					Contact Us
-				</h1>
+				<h1 className="text-white text-5xl font-medium">Contact Us</h1>
 			</div>
+
 			{/* Section 1 */}
 			<section className="con1 mx-4 md:mx-10 lg:mx-40 my-8 md:my-14">
 				<div className="des-top-boarder1 bg-primary h-3 w-28 md:h-6 md:w-56"></div>
 				<div className="flex flex-wrap md:flex-nowrap">
-					<div className="des-left-boarder1 bg-primary h-20 md:h-60 w-2 md:w-6"></div>
+					<div className="des-right flex items-start justify-start w-screen md:w-fit">
+						<div className="des-left-boarder1 bg-primary h-14 md:h-80 w-2 md:w-4"></div>
+					</div>
 					<div className="content p-4 md:p-8 flex-grow items-center justify-center">
 						<h1 className="text-center text-2xl md:text-4xl lg:text-5xl tracking-tight font-sans font-semibold text-primary my-6 md:my-10">
 							Get In Touch
@@ -38,8 +39,9 @@ const Contact = () => {
 							take pride in our ability to provide roofing services that stand
 							up to the challenges of time and weather.
 						</p>
-						<div className="contact-info grid grid-flow-row grid-cols-1 grid-rows-4 md:grid-cols-2 lg:flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-20 py-6">
-							<div className="flex items-center justify-evenly gap-3 md:gap-5">
+						<div className="contact-info grid grid-flow-row grid-cols-1 grid-rows-4 md:grid-cols-2 lg:grid-cols-4 items-center gap-6 md:gap-10 lg:gap-20 md:pt-10 mt-16 pl-24 h-auto max-h-96">
+							{/* 1 Location */}
+							<div className="flex items-center gap-3 md:gap-5">
 								<FaLocationArrow className="text-2xl md:text-4xl" />
 								<div className="flex flex-col">
 									<h4 className="text-lg md:text-2xl font-medium">Location</h4>
@@ -48,7 +50,8 @@ const Contact = () => {
 									</p>
 								</div>
 							</div>
-							<div className="flex items-center justify-evenly gap-3 md:gap-5">
+							{/* 2 Phone */}
+							<div className="flex items-center gap-3 md:gap-5">
 								<FaPhone className="text-2xl md:text-4xl" />
 								<div className="flex flex-col">
 									<h4 className="text-lg md:text-2xl font-medium">Phone</h4>
@@ -60,7 +63,8 @@ const Contact = () => {
 									</a>
 								</div>
 							</div>
-							<div className="flex items-center justify-evenly gap-3 md:gap-5">
+							{/* 3 Calendar */}
+							<div className="flex items-center gap-3 md:gap-5">
 								<FaCalendarAlt className="text-2xl md:text-4xl" />
 								<div className="flex flex-col">
 									<h4 className="text-lg md:text-2xl font-medium">
@@ -71,7 +75,8 @@ const Contact = () => {
 									</p>
 								</div>
 							</div>
-							<div className="flex items-center justify-evenly gap-3 md:gap-5">
+							{/* 4 Clock */}
+							<div className="flex items-center gap-3 md:gap-5">
 								<FaClock className="text-2xl md:text-4xl" />
 								<div className="flex flex-col">
 									<h4 className="text-lg md:text-2xl font-medium">
@@ -95,7 +100,7 @@ const Contact = () => {
 
 			{/* Section 2 */}
 			<div className="sec2-contact py-5 md:py-10 flex flex-col justify-center items-center">
-				<h1 className="text-2xl lg:text-4xl font-semibold tracking-wide font-[TimesNewRoman] pb-4">
+				<h1 className="text-2xl lg:text-4xl font-semibold tracking-wide pb-4">
 					Follow Us On
 				</h1>
 				<div className="follow-icon flex justify-evenly items-center md:gap-8">
@@ -133,16 +138,37 @@ const Contact = () => {
 					<Image fill src="./contact-img/1-1.jpg" alt="test" />
 				</div>
 				<div className="box2 w-screen md:w-1/2">
-					<h1 className="text-center text-primary text-3xl pt-8 md:pt-0 font-[TimesNewRoman] font-semibold">
+					<h1 className="text-center text-primary text-3xl pt-8 md:pt-0 font-semibold">
 						Send Us A Message
 					</h1>
-					<ContactForm />
+					{/* Form */}
+					<div className="w-full h-[800px] md:h-[650px]">
+						<iframe
+							src="https://api.leadconnectorhq.com/widget/form/qdSOxp9NXk8Ozs8j8z9e"
+							className="w-full h-[550px] mx-0"
+							id="inline-qdSOxp9NXk8Ozs8j8z9e"
+							data-layout="{&aposid&apos:&aposINLINE&apos}"
+							data-trigger-type="alwaysShow"
+							data-trigger-value=""
+							data-activation-type="alwaysActivated"
+							data-activation-value=""
+							data-deactivation-type="neverDeactivate"
+							data-deactivation-value=""
+							data-form-name="LP Form"
+							data-height="548"
+							data-layout-iframe-id="inline-qdSOxp9NXk8Ozs8j8z9e"
+							data-form-id="qdSOxp9NXk8Ozs8j8z9e"
+							title="LP Form"
+							loading="eager"
+						/>
+						<Script src="https://link.msgsndr.com/js/form_embed.js"></Script>
+					</div>
 				</div>
 			</div>
 
 			{/* Section 4 - Map */}
 			<div className="map">
-				<h1 className="text-center font-bold font-[TimesNewRoman] text-2xl text-balance md:text-5xl pb-10 text-primary">
+				<h1 className="text-center font-bold text-2xl text-balance md:text-5xl pb-10 text-primary">
 					We Cover 25 Miles Around Hempstead, NY
 				</h1>
 				<iframe
