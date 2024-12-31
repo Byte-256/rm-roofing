@@ -17,6 +17,8 @@
 /.next/
 /out/
 
+/public/index.html
+/public/index.css
 # production
 /build
 
@@ -40,3 +42,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .vscode/settings.json
+
+#Taught process
+.idea.md

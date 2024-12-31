@@ -1,28 +1,49 @@
+// Hero Component
+
 export default function Hero() {
 	return (
 		<>
-			<section
-				className="sec-1 relative bg-cover py-20 px-6 md:px-20"
-				style={{ backgroundImage: "url(./image/homemainbg.jpg)" }}
-			>
-				{/* Overlay to darken the image */}
-				<div className="absolute inset-0 bg-black opacity-10"></div>
+			{/* Section 1 Home */}
+			{/* Overlay to darken the image */}
+			<div className="pic-wrapper relative w-full h-full  overflow-hidden svgHerosection1 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black/45">
+				{/* Image SlideShow */}
+				<figure
+					className="pic-1"
+					style={{ backgroundImage: "url(./image/hero-1.jpg)" }}
+				></figure>
+				<figure
+					className="pic-2"
+					style={{ backgroundImage: "url(./image/hero-2.jpg)" }}
+				></figure>
+				<figure
+					className="pic-3"
+					style={{ backgroundImage: "url(./image/hero-3.jpg)" }}
+				></figure>
+				<figure
+					className="pic-4"
+					style={{ backgroundImage: "url(./image/hero-4.jpg)" }}
+				></figure>
 
 				{/* Hero Content */}
-				<div className="relative z-10 flex flex-col justify-center items-center text-center md:text-left">
-					<h1 className="m-4 font-bold text-3xl md:text-5xl text-shadow-lg text-white">
-						Roofing Excellence, 14 Years Strong.
-					</h1>
-					<p className="m-4 text-lg md:text-xl max-w-5xl text-shadow-md text-white font-semibold sm:font-normal">
-						At R&M Roofers LLC, our mission is simple and steadfast: to deliver
-						roofing solutions that protect, enhance, and stand the test of time.
-						With 14 years of roofing expertise, we understand the vital role
-						your roof plays in protecting your home or business. Our goal is to
-						provide roofing services that do more than just function — we strive
-						to create roofs that bring you peace of mind.
-					</p>
+				<div className="z-[4] relative w-4/5 mx-auto h-full flex md:flex-row flex-coljustify-center items-centermd:pb-[80px]pt-48pb-[40px]">
+					<div className="w-full justify-center py-40">
+						<div className="w-full flex flex-col justify-center items-center">
+							<h1 className="text-white text-center text-[30px] md:text-[48px] font-bold">
+								Roofing Excellence, 14 Years Strong.
+							</h1>
+							<p className="text-white text-center">
+								At R&amp;M Roofers LLC, our mission is clear and resolute: to
+								provide roofing solutions that protect, enhance, and endure.
+								With 14 years of roofing expertise, we understand the critical
+								role that your roof plays in safeguarding your home or business.
+								Our mission is to deliver roofing services that go beyond mere
+								functionality; we aim to create roofs that provide peace of
+								mind.
+							</p>
+						</div>
+					</div>
 				</div>
-			</section>
+			</div>
 		</>
 	);
 }

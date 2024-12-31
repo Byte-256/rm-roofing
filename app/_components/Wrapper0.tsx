@@ -1,24 +1,29 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Wrapper0() {
 	return (
-		<div className="wraper-0 from-[#242424] to-[#efefef] bg-gradient-to-b h-1/5 flex flex-col">
-			<div className="text-white text-lg pt-12 pl-12">
-				<span className="pl-1 md:pl-8 flex gap-2">
-					<p className="bg-amber-300 h-1 mt-2.5 w-3"></p>
-					LATEST PROJECTS
+		<div
+			style={{ backgroundImage: "url(./image/graphics2.jpg)" }}
+			className="wraper-0 bg-gray-800 flex flex-col relative overflow-hidden"
+		>
+			{/* Decorative Background Elements */}
+			<div className="absolute inset-0 md:h-1/2 lg:h-3/5 bg-[#242424] pointer-events-none"></div>
+
+			{/* Section Header */}
+			<div className="text-white text-lg pt-16 px-4 md:px-12 relative z-10">
+				<span className="flex items-center gap-2">
+					<p className="bg-amber-300 h-1 w-6 mt-2"></p>
+					<span className="uppercase tracking-wide">LATEST PROJECTS</span>
 				</span>
-				<h2 className="pl-8 pt-3 text-3xl text-amber-300 font-bold">
+				<h2 className="text-3xl md:text-5xl text-yellow-400 font-bold pt-3 leading-tight">
 					{`Let's Explore Our`} <br /> Recent Works
 				</h2>
 			</div>
-			<ImageCards />
-			
-			<div className="flex flex-col justify-center items-center pb-16">
-				<h1 className="text-4xl font-bold pt-8 pb-4 col-span-4">Want more ?</h1>
-				<Link href="/gallery" className="bg-[#006800] text-white font-semibold text-xl p-2 rounded-md"> Click here </Link>
-			</div>
+
+			{/* Image Cards */}
+			<div className="relative z-10 py-8 flex sm:start-14 lg:start-6 justify-end">
+				<ImageCards />
+			</div>		
 		</div>
 	);
 }
@@ -48,10 +53,10 @@ function ImageCards() {
 			alt: "Photo 4",
 			title: "Commercial | Factory | Residential",
 			description: "Renovation Roof",
-		}
+		},
 	];
 	return (
-		<div className="image-container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-16">
+		<div className="image-container grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-16">
 			{images.map((image, index) => (
 				<div
 					key={index}
@@ -67,10 +72,10 @@ function ImageCards() {
 					/>
 
 					{/* Overlay */}
-					<div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+					<div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
 					{/* Content */}
-					<div className="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
+					<div className="absolute bottom-0 left-0 p-4 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
 						<p>{image.title}</p>
 						<h3 className="text-lg font-bold">{image.description}</h3>
 					</div>
