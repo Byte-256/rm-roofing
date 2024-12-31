@@ -39,7 +39,7 @@ const Contact = () => {
 							take pride in our ability to provide roofing services that stand
 							up to the challenges of time and weather.
 						</p>
-						<div className="contact-info grid grid-flow-row grid-cols-1 grid-rows-4 md:grid-cols-2 lg:grid-cols-4 items-center gap-6 md:gap-10 lg:gap-20 md:pt-10 mt-16 pl-24 h-auto max-h-96">
+						<div className="contact-info grid grid-flow-row grid-cols-1 grid-rows-4 md:grid-cols-2 lg:grid-cols-4 items-center gap-6 md:gap-10 lg:gap-20 md:pt-10 mt-16 pl-24 h-auto max-h-96 md:max-h-64 lg:max-h-36">
 							{/* 1 Location */}
 							<div className="flex items-center gap-3 md:gap-5">
 								<FaLocationArrow className="text-2xl md:text-4xl" />

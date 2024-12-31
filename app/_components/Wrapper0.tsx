@@ -21,7 +21,7 @@ export default function Wrapper0() {
 			</div>
 
 			{/* Image Cards */}
-			<div className="relative z-10 py-8 flex justify-end">
+			<div className="relative z-10 py-8 flex sm:start-14 lg:start-6 justify-end">
 				<ImageCards />
 			</div>		
 		</div>
@@ -56,7 +56,7 @@ function ImageCards() {
 		},
 	];
 	return (
-		<div className="image-container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-16">
+		<div className="image-container grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-16">
 			{images.map((image, index) => (
 				<div
 					key={index}

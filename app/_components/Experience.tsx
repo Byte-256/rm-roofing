@@ -4,10 +4,10 @@ import Script from "next/script";
 
 export default function Experience() {
 	return (
-		<section className="mt-24 px-4 md:px-16">
-			<div className="sec-expc flex flex-col md:flex-row justify-center items-center md:items-start md:gap-14">
+		<section className="mt-24 pl-2 md:px-16">
+			<div className="sec-expc flex flex-col pl-20 md:flex-row justify-center items-center md:items-start start-20">
 				{/* Left Column */}
-				<div className="main-menu-text flex flex-col max-w-full md:max-w-[40%] mt-10 md:mt-36 text-center md:text-left">
+				<div className="main-menu-text flex flex-col max-w-full md:max-w-[50%] mt-10 md:mt-36 text-center md:text-left">
 					<h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
 						We have 14 Years of Experience
 					</h2>
@@ -37,8 +37,8 @@ export default function Experience() {
 
 function ContactForm() {
 	return (
-		<div className="w-screen h-auto flex justify-center md:justify-end items-center py-10 md:py-16">
-			<div className="w-[90%] md:w-[70%] lg:w-[50%] bg-white rounded-lg overflow-hidden">
+		<div className="w-3/5 h-auto flex justify-center items-center py-10 md:py-16">
+			<div className="w-[90%] md:w-[70%] lg:w-[60%] bg-white rounded-lg overflow-hidden">
 				<iframe
 					src="https://api.leadconnectorhq.com/widget/form/qdSOxp9NXk8Ozs8j8z9e"
 					className="w-full h-[550px] md:h-[650px] border-0"
