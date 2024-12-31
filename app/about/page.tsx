@@ -11,9 +11,14 @@ export default function About() {
 
 	return (
 		<>
-			<section className="title-banner flex justify-center items-center">
-				<div className="title bg-primary w-screen p-10">
-					<h1 className="text-center text-white font-bold text-5xl">About Us</h1>
+			<section
+				className="title-banner flex justify-center items-center bg-center bg-cover bg-no-repeat"
+				style={{ backgroundImage: "url(./about-img/about-banner.jpg)" }}
+			>
+				<div className="title w-screen p-10 bg-black/45">
+					<h1 className="text-center text-white font-semibold text-5xl py-24">
+						About Us
+					</h1>
 				</div>
 			</section>
 
@@ -190,7 +195,7 @@ export function About2() {
 						</p>
 					</div>
 				</div>
-				<div className="container2 flex flex-col items-center md:p-10 md:pt-16">
+				<div className="container2 flex flex-col items-center md:pb-10 md:pt-16">
 					<div className="vision mb-4">
 						<h2 className="text-center text-4xl">
 							Our <span className="text-primary font-bold">Vision</span>

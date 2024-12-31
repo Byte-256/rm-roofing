@@ -16,9 +16,16 @@ const Contact = () => {
 	return (
 		<section className="flex grow flex-col">
 			{/* Title */}
-			<div className="title flex justify-center items-center bg-primary grow h-40">
-				<h1 className="text-white text-5xl font-medium">Contact Us</h1>
-			</div>
+			<section
+				className="title-banner flex justify-center items-center bg-cover bg-no-repeat"
+				style={{ backgroundImage: "url(./contact-img/title.jpg)" }}
+			>
+				<div className="title w-screen p-10 bg-black/45">
+					<h1 className="text-center text-white font-semibold text-5xl py-24">
+						Contact Us
+					</h1>
+				</div>
+			</section>
 
 			{/* Section 1 */}
 			<section className="con1 mx-4 md:mx-10 lg:mx-40 my-8 md:my-14">

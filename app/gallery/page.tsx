@@ -8,8 +8,10 @@ export default function Gallery() {
 	);
 	return (
 		<>
-			<section className="bg-amber-400  p-10 flex justify-center text-center">
-				<h1 className="font-semibold text-5xl">GALLERY</h1>
+			<section 
+			style={{backgroundImage: "url('./gallery-img/title.webp')"}}
+			className="bg-black/45  p-10 flex justify-center text-center bg-no-repeat bg-cover">
+				<h1 className="font-semibold text-5xl text-white py-24">GALLERY</h1>
 			</section>
 			<section className="gal-img lg:px-10 columns-1 md:columns-2 lg:columns-3">
 				{images.map((src, index) => (

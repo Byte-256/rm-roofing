@@ -1,5 +1,4 @@
 // Hero Component
-
 export default function Hero() {
 	return (
 		<>
@@ -25,8 +24,8 @@ export default function Hero() {
 				></figure>
 
 				{/* Hero Content */}
-				<div className="z-[4] relative w-4/5 mx-auto h-full flex md:flex-row flex-coljustify-center items-centermd:pb-[80px]pt-48pb-[40px]">
-					<div className="w-full justify-center py-40">
+				<div className="z-[4] relative w-4/5 mx-auto h-full flex md:flex-row flex-col justify-center items-center md:pb-[80px]">
+					<div className="w-full justify-center py-32">
 						<div className="w-full flex flex-col justify-center items-center">
 							<h1 className="text-white text-center text-[30px] md:text-[48px] font-bold">
 								Roofing Excellence, 14 Years Strong.
@@ -40,6 +39,13 @@ export default function Hero() {
 								functionality; we aim to create roofs that provide peace of
 								mind.
 							</p>
+							<div className="pt-20">
+								<button className="p-4 bg-[#e4b101] font-medium text-white rounded-xl">
+									<a href="#contact-form" className="hover:text-black">
+										Get Quote
+									</a>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
