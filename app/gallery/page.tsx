@@ -11,9 +11,20 @@ export default function Gallery() {
 			<section className="bg-amber-400  p-10 flex justify-center text-center">
 				<h1 className="font-semibold text-5xl">GALLERY</h1>
 			</section>
-			<section className="gal-img">
+			<section className="gal-img lg:px-10 columns-1 md:columns-2 lg:columns-3">
 				{images.map((src, index) => (
-					<Image width={100} height={100} src={src} alt={src + " - Image"} key={index}/>
+					<Image
+						width={100}
+						height={100}
+						src={src}
+						alt={src + " - Image"}
+						key={index}
+						className={
+							src === "./gallery-img/gal(51).jpg"
+								? "block md:hidden lg:block"
+								: "block"
+						}
+					/>
 				))}
 			</section>
 			<ScrollToTop />

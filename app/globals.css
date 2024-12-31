@@ -44,12 +44,14 @@ button:focus {
 }
 .gal-img {
 	margin: 1em;
-	columns: 400px;
+	column-gap: 1em;	
 }
 
 .gal-img img {
 	width: 100%;
 	margin-bottom: 1em;
+	object-fit: cover;
+	height: 400px; /* Adjust the height as needed */
 }
 
 /* About Us */
