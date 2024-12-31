@@ -192,7 +192,7 @@ export function Footer() {
 						&nbsp;AxwinX&nbsp;
 					</a>
 					&
-					<a target="_blank" href="https://Byte-265.github.io/">
+					<a target="_blank" href="https://Byte-256.github.io/">
 						&nbsp;Byte-256&nbsp;
 					</a>
 				</p>
