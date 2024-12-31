@@ -4,7 +4,7 @@ import Script from "next/script";
 
 export default function Experience() {
 	return (
-		<section className="mt-24 pl-2 md:px-16">
+		<section className="pl-2 md:px-16 lg:pt-16 lg:pb-44">
 			<div className="sec-expc flex flex-col px-4 md:pl-20 md:flex-row justify-center items-center md:items-start start-20">
 				{/* Left Column */}
 				<div className="main-menu-text flex flex-col max-w-full md:max-w-[50%] mt-10 md:mt-36 text-center md:text-left">
@@ -37,7 +37,7 @@ export default function Experience() {
 
 function ContactForm() {
 	return (
-		<div className="w-screen md:w-3/5 h-auto flex justify-center items-center py-10 md:py-16">
+		<div className="w-screen md:w-3/5 mt-52 h-44 flex justify-center items-center py-10 md:py-16">
 			<div className="w-dvw md:w-[70%] lg:w-[60%] bg-white rounded-lg overflow-hidden">
 				<iframe
 					src="https://api.leadconnectorhq.com/widget/form/qdSOxp9NXk8Ozs8j8z9e"
