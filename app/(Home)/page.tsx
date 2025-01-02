@@ -6,6 +6,7 @@ import Showcase from "@/app/_components/Showcase";
 import Wrapper0 from "@/app/_components/Wrapper0";
 import { About2 } from "@/app/about/page";
 import { dataProp } from "@/app/services/page";
+import Popup from "../_components/Popup";
 
 export default function Home() {
 	const ShowcaseCardData: dataProp[] = [
@@ -46,10 +47,12 @@ export default function Home() {
 			<Wrapper0 />
 			<Experience2 />
 			<About2 />
+
 			<h2 className="text-4xl text-center font-bold pt-20 md:pt-0">
 				Our <span className="text-yellow-300">Service</span>
 			</h2>
 			<Showcase service_data={ShowcaseCardData} />
+
 			<h1 className="text-3xl font-bold w-screen text-center py-10">
 				Locate <span className="text-yellow-400">Us</span>
 			</h1>
@@ -61,6 +64,7 @@ export default function Home() {
 				style={{ border: 0 }}
 				allowFullScreen
 			></iframe>
+			<Popup />
 		</>
 	);
 }

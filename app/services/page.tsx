@@ -49,16 +49,12 @@ export default function Services() {
 	return (
 		<>
 			{/* Heading */}
-			<section>
-				<div
-					style={{ backgroundImage: "url(./services-img/hero.jpg)" }}
-					className="w-full h-96 bg-auto md:bg-cover bg-fixed relative group"
-				>
-					{/* Black gradient overlay */}
-					<div className="absolute inset-0 bg-black to-transparent opacity-40"></div>
-
-					{/* Text content */}
-					<h1 className="relative z-10 font-bold text-5xl text-center text-amber-300 p-24 pt-36">
+			<section
+				className="title-banner flex justify-center items-center bg-center bg-cover bg-no-repeat"
+				style={{ backgroundImage: "url(./services-img/hero.jpg)" }}
+			>
+				<div className="title w-screen p-10 bg-black/45">
+					<h1 className="text-center text-white font-semibold text-5xl py-24">
 						Our Services
 					</h1>
 				</div>

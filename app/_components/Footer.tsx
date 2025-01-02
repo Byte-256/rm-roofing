@@ -33,7 +33,7 @@ export function Footer() {
 					/>
 				</div>
 				<Link
-					href={"tel:+8469025092"}
+					href={"tel:+1516-233-9506"}
 					className="foot-contact flex items-center gap-2.5"
 				>
 					<div className="flex justify-center items-center bg-amber-300 text-white text-lg w-8 h-8 hover:animate-spin hover:bg-white hover:text-primary animate-bounce rounded-full">
@@ -41,7 +41,7 @@ export function Footer() {
 					</div>
 					<div className="">
 						<p>Need Any Roofing Help?</p>
-						<h3 className="text-lg font-semibold">Call Us: +8469025092</h3>
+						<h3 className="text-lg font-semibold">Call Us: +1 516-233-9506</h3>
 					</div>
 				</Link>
 				<div className="foot-social flex py-4 md:py-0 gap-4">
@@ -68,7 +68,7 @@ export function Footer() {
 						<FaWhatsapp />
 					</Link>
 					<Link
-						href="https://www.instagram.com/ssinidaroofing/" //Changed!
+						href="https://www.instagram.com/rmrooferllc/" //Changed! //changed!
 						target="_blank"
 						className="text-4xl md:text-2xl hover:text-yellow-300"
 					>
@@ -192,7 +192,7 @@ export function Footer() {
 						&nbsp;AxwinX&nbsp;
 					</a>
 					&
-					<a target="_blank" href="https://Byte-265.github.io/">
+					<a target="_blank" href="https://Byte-256.github.io/">
 						&nbsp;Byte-256&nbsp;
 					</a>
 				</p>
