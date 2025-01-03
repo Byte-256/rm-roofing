@@ -28,16 +28,10 @@ export default function Hero() {
 					<div className="w-full justify-center py-32">
 						<div className="w-full flex flex-col justify-center items-center">
 							<h1 className="text-white text-center text-[30px] md:text-[48px] font-bold">
-								Roofing Excellence, 14 Years Strong.
+								Best Quality,Best Materials ,At Fair Pricing and Get A Fast Free Quote.
 							</h1>
 							<p className="text-white text-center">
-								At R&amp;M Roofers LLC, our mission is clear and resolute: to
-								provide roofing solutions that protect, enhance, and endure.
-								With 14 years of roofing expertise, we understand the critical
-								role that your roof plays in safeguarding your home or business.
-								Our mission is to deliver roofing services that go beyond mere
-								functionality; we aim to create roofs that provide peace of
-								mind.
+								
 							</p>
 							<div className="pt-20">
 								<button className="p-4 bg-[#e4b101] font-medium text-white rounded-xl">
