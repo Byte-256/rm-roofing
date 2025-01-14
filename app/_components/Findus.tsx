@@ -7,7 +7,7 @@ export default function FindUs() {
 				Find Us On
 			</h1>
 			<div className="findusimg flex flex-wrap justify-evenly gap-4 md:gap-10 mt-8">
-				<a
+				{/* <a
 					className="findus-anchor"
 					href="https://www.houzz.com/professionals/roofing-and-gutters/r-and-m-roofers-llc-pfvwus-pf~1547256125"
 					target="_blank"
@@ -20,7 +20,7 @@ export default function FindUs() {
 						alt="Houzz"
 						className=" w-36 sm:w-40 md:w-48 lg:w-64 p-4"
 					/>
-				</a>
+				</a> */}
 				<a
 					className="findus-anchor"
 					href="https://www.bbb.org/us/ny/hempstead/profile/roofing-contractors/r-m-roofers-llc-0121-87152151"
